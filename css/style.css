@@ -1,0 +1,270 @@
+/*Para importar la tipografía*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+/*Paleta de Colores*/
+:root {
+  /* SCSS RGB */
+  --black: rgba(0, 8, 20, 1);
+  --blue: rgba(0, 29, 61, 1);
+  --blue-hell: rgba(0, 53, 102, 1);
+  --yellow: rgba(255, 195, 0, 1);
+  --gold: rgba(255, 214, 10, 1);
+  --gold-hell: rgb(248, 236, 176);
+}
+
+/*Reseteo general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+/*Estilo para todas las páginas*/
+
+/*Estilo del body*/
+body {
+  background-color: var(--black);
+  font-family: Barlow, sans-serif;
+}
+
+/*Header*/
+.header__img {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+}
+
+/*Nav*/
+.nav {
+  background-color: var(--blue);
+  display: block;
+  width: 100vw;
+  /*Para que el nav ocupe todo el ancho de la pantalla*/
+
+}
+
+.nav ul {
+  list-style: none;
+  /*Quitamos el estilo a las listas*/
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--gold);
+  padding: 10px 15px;
+  display: block;
+  /*Hacemos que se comporte como bloque y no como en inline*/
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.nav li {
+  width: 200px;
+}
+
+.nav__ul>li {
+  /* Lo que está entre parentesis afecta a los hijos directos li de la lista principal*/
+  float: left;
+  /*Con esto consigo que los li se coloquen en la misma linea pero las nuevas listas, ul, dentro de la lista principal se mantenga en una columna*/
+}
+
+.nav a:hover {
+  background-color: var(--blue-hell);
+}
+
+/*El color cambia al pasar el mouse encima*/
+
+.nav__expansiones__sub_menu {
+  display: none;
+  /*Ocultamos el submenú*/
+  position: absolute;
+  /*Para que al desplegarse no me arrastre todo el contenido de la página para abajo*/
+  margin-left: 25px;
+  background-color: var(--black);
+}
+
+.nav__expansiones:hover>ul {
+  /*Al pasar el mouse por los li, cuando haya un hijo directo de este que tenga un ul, entonces... */
+  display: block;
+}
+
+/*Footer*/
+.footer {
+  color: var(--blue);
+  background-color: var(--yellow);
+  padding-top: 20px;
+}
+
+.footer__logo {
+  display: inline-block;
+  width: 45vw;
+  height: 100px;
+  text-align: center;
+}
+
+.footer__logo img {
+  width: 50px;
+  height: auto;
+  position: relative;
+  top: -30px;
+
+}
+
+.footer__enlaces {
+  position: relative;
+  display: inline-block;
+  width: 45vw;
+  height: 100px;
+  text-align: center;
+}
+
+.footer__enlaces h6 {
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.footer__a__letras {
+  display: block;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.footer__i {
+  font-size: 2rem;
+  color: var(--blue);
+  padding: 15px 15px 5px;
+  font-weight: 400;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/*___________________________________________________*/
+
+/*Estilo para la página principal (index)*/
+
+/*Imagen de todos los juegos*/
+.main_section__juegos {
+  position: relative;
+  margin: auto;
+}
+
+.main__section__juegos__img {
+  width: 70%;
+  display: block;
+  margin: 50px auto;
+}
+
+
+/*Edición 20 Aniversario*/
+/*img*/
+
+.main__section__20ed {
+  width: 80vw;
+  height: 500px;
+  align-content: center;
+
+}
+
+.main__section__20ed__portada {
+  width: 40vw;
+  height: auto;
+  display: inline;
+}
+
+.main__section__20ed__portada img {
+  height: 500px;
+  width: auto;
+  padding: 0 50px;
+}
+
+.main__section__20ed__title {
+  width: 40vw;
+  height: 500px;
+  display: inline-block;
+  position: relative;
+  /*Me permite posicionar el article que contiene el h2 respecto a su contenedor section*/
+  top: -500px;
+}
+
+.main__section__20ed__title h2 {
+  font-size: 2.25rem;
+  position: relative;
+  top: 240px;
+  padding: 0 50px;
+}
+
+
+/*Article Historia*/
+.historia {
+  width: 80vw;
+  height: auto;
+}
+
+.historia h3 {
+  font-size: 2rem;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.historia__p {
+  font-size: 1.5rem;
+  padding: 0 100px;
+  line-height: 50px;
+}
+
+/*Aside Shop*/
+.aside__shop {
+  width: 15vw;
+  height: 500px;
+  background-color: var(--blue-hell);
+}
+
+.aside__shop a {
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  color: var(--yellow);
+
+}
+
+/*___________________________________________________________________*/
+/*Expansiones*/
+
+
+/*__________________________________________________________________*/
+
+/*Reglas*/
+
+main img {
+  /*Provisional*/
+  width: 150px;
+  height: auto;
+}
+
+
+/*__________________________________________________________*/
+
+/*Acerca de*/
+
+main {
+  color: var(--yellow);
+}
+
+/*__________________________________________________________________________________*/
+/*Shop*/
+.section__shop {
+  width: 100vw;
+  position: relative;
+  justify-content: center;
+}
+
+.shop__iframe__mla iframe {
+  width: 80vw;
+  height: 1000px;
+}
