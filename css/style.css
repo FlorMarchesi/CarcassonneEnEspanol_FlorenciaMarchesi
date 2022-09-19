@@ -3,13 +3,12 @@
 
 /*Paleta de Colores*/
 :root {
-  /* SCSS RGB */
+  /* Bootstrap */
   --black: rgba(0, 8, 20, 1);
   --blue: rgba(0, 29, 61, 1);
-  --blue-hell: rgba(0, 53, 102, 1);
-  --yellow: rgba(255, 195, 0, 1);
+  --blue-hell: rgb(0, 34, 70);
   --gold: rgba(255, 214, 10, 1);
-  --gold-hell: rgb(248, 236, 176);
+  --gold-hell: rgb(253, 223, 70);
 }
 
 /*Reseteo general*/
@@ -24,24 +23,39 @@
 
 /*Estilo del body*/
 body {
-  background-color: var(--black);
   font-family: Barlow, sans-serif;
 }
 
 /*Header*/
-.header__img {
+.header {
   width: 100vw;
-  height: auto;
-  margin: 0;
+  padding: 12px 0;
+  justify-content: center;
+  align-items: baseline;
+  background-image: url("../images/header/juego-mesa-carcassonne.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__img {
+  width: 80px;
+  margin: 0 20px;
+}
+
+.header__img__2 {
+  width: 500px;
+
 }
 
 /*Nav*/
-.nav {
-  background-color: var(--blue);
-  display: block;
-  width: 100vw;
-  /*Para que el nav ocupe todo el ancho de la pantalla*/
+.nav{
 
+  background-color: var(--gold-hell);
+}
+
+.nav a {
+  color: var(--blue);
+  padding: 3px 50px;
 }
 
 .nav ul {
@@ -49,46 +63,12 @@ body {
   /*Quitamos el estilo a las listas*/
 }
 
-.nav a {
-  text-decoration: none;
-  color: var(--gold);
-  padding: 10px 15px;
-  display: block;
-  /*Hacemos que se comporte como bloque y no como en inline*/
-  font-weight: 700;
-  text-align: center;
-
-}
-
-.nav li {
-  width: 200px;
-}
-
-.nav__ul>li {
-  /* Lo que está entre parentesis afecta a los hijos directos li de la lista principal*/
-  float: left;
-  /*Con esto consigo que los li se coloquen en la misma linea pero las nuevas listas, ul, dentro de la lista principal se mantenga en una columna*/
-}
-
+/*El color cambia al pasar el mouse encima*/
 .nav a:hover {
   background-color: var(--blue-hell);
+  color: var(--gold-hell);
 }
 
-/*El color cambia al pasar el mouse encima*/
-
-.nav__expansiones__sub_menu {
-  display: none;
-  /*Ocultamos el submenú*/
-  position: absolute;
-  /*Para que al desplegarse no me arrastre todo el contenido de la página para abajo*/
-  margin-left: 25px;
-  background-color: var(--black);
-}
-
-.nav__expansiones:hover>ul {
-  /*Al pasar el mouse por los li, cuando haya un hijo directo de este que tenga un ul, entonces... */
-  display: block;
-}
 
 /*Footer*/
 .footer {
@@ -148,57 +128,17 @@ body {
 
 /*Estilo para la página principal (index)*/
 
-/*Imagen de todos los juegos*/
-.main_section__juegos {
-  position: relative;
-  margin: auto;
-}
-
-.main__section__juegos__img {
-  width: 70%;
-  display: block;
-  margin: 50px auto;
-}
-
-
 /*Edición 20 Aniversario*/
 /*img*/
-
-.main__section__20ed {
-  width: 80vw;
-  height: 500px;
-  align-content: center;
-
+.ed__aniversario__img{
+  width: 500px;
 }
 
-.main__section__20ed__portada {
-  width: 40vw;
-  height: auto;
-  display: inline;
+.container__ed__aniversario__h2{
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 4rem;
 }
-
-.main__section__20ed__portada img {
-  height: 500px;
-  width: auto;
-  padding: 0 50px;
-}
-
-.main__section__20ed__title {
-  width: 40vw;
-  height: 500px;
-  display: inline-block;
-  position: relative;
-  /*Me permite posicionar el article que contiene el h2 respecto a su contenedor section*/
-  top: -500px;
-}
-
-.main__section__20ed__title h2 {
-  font-size: 2.25rem;
-  position: relative;
-  top: 240px;
-  padding: 0 50px;
-}
-
 
 /*Article Historia*/
 .historia {
