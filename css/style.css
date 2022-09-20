@@ -43,6 +43,24 @@
   margin: 0 20px;
 }
 
+/* Animación para que el logo de vuelta */
+.header__div__img {
+  animation: rotacion 2.5s 1 linear;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Animación para que el logo de vuelta */
+
+
 .header__img__2 {
   width: 500px;
 
@@ -58,7 +76,7 @@
   font-size: 1.1rem;
   padding: 3px 50px;
   display: block;
-  width: 200px;
+  width: 300px;
   text-align: center;
 
 }
@@ -71,10 +89,8 @@
 /*El color cambia al pasar el mouse encima*/
 .nav a:hover {
   color: var(--gold);
-  font-weight: 700;
+  font-weight: 600;
 }
-
-
 
 /* Footer */
 .body__footer {
@@ -84,14 +100,13 @@
 .body__footer a {
   text-decoration: none;
   color: var(--gold-hell);
+  font-size: 1rem;
 }
-.body__footer a:hover{
+
+.body__footer a:hover {
   color: var(--gold);
 }
 
-.footer__text {
-  font-size: 0.8rem;
-}
 
 .footer__copyright {
   background-color: var(--blue-hell);
@@ -103,17 +118,19 @@
 /* Estilo para la página principal (index) */
 
 /* Edición 20 Aniversario */
-.ed__aniversario a{
+.ed__aniversario a {
   text-decoration: none;
 }
+
 /*img*/
 .ed__aniversario__img {
   width: 500px;
 }
 
-.ed__aniversario__img:hover{
+.ed__aniversario__img:hover {
   opacity: 0.8;
 }
+
 .container__ed__aniversario__h2 {
   color: var(--gold);
   font-weight: 700;
@@ -151,9 +168,24 @@ main img {
 /*__________________________________________________________*/
 
 /*Acerca de*/
+.acerca_de__body {
+  background-color: var(--black);
+}
 
-main {
-  color: var(--yellow);
+.acerca_de__main {
+  color: var(--gold-hell);
+
+}
+.acerca_de__main h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.acerca_de__main section {
+  background-color: var(--black);
+}
+.acerca_de__main article {
+  background-color: var(--blue);
 }
 
 /*__________________________________________________________________________________*/

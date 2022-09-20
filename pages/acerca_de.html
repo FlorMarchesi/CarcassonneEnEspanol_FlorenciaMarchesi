@@ -7,126 +7,231 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
-  <!--Linkeo de CSS Bootstrap-->
+  <!-- Linkeo de CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Acerca de</title>
 </head>
 
-<body>
-  <!--Header-->
-  <header>
-    <a href="../index.html"><img class="header__img" src="../images/header/carcassonne_header.png"
-        alt="Portada de la página"></a>
+<body class="body acerca_de__body">
+  <!-- Header -->
+  <header class="header d-flex">
+    <div class="header__div__img d-inline-block ">
+      <a href="../index.html"><img class="header__img" src="../images/header/logo.png" alt="Logo"></a>
+    </div>
+    <div class="d-inline-block">
+      <img class="header__img__2" src="../images/header/portada.png" alt="Logo">
+    </div>
   </header>
+  <!-- Header -->
 
-  <!--Menú navegable-->
-  <nav class="nav">
-    <ul class="nav__ul">
-      <li><a href="../index.html">Inicio</a></li>
-      <li class="nav__expansiones"><a href="expansiones.html">Expansiones</a>
-        <ul class="nav__expansiones__sub_menu">
-          <li><a href="expansiones/expansiones_expansiones.html">Expansiones</a></li>
-          <li><a href="expansiones/spin_off.html">Spin-Off</a></li>
-          <li><a href="expansiones/mini_expansiones.html">Mini Expansiones</a></li>
-          <li><a href="expansiones/especiales.html">Especiales</a></li>
-        </ul>
-      </li>
-      <li><a href="reglas.html">Reglas</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+  <!-- Menú navegable con Bootstrap -->
+  <div class="nav d-flex justify-content-center mb-5">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid nav__div">
 
-  <!--Main que contiene las section acerca del autor y las editoriales-->
-  <main>
-    <section>
-      <h2>Klaus-Jürgen Wrede</h2>
-      <img src="../images/acerca_de/klaus-jurgen.png" alt="">
-      <p>Klaus-Jürgen Wrede nació en el año 1963 en Alemania. Estudió teología católica y música, profesiones que
-        ejercería como
-        profesor hasta 2009, incluso después de lanzar su célebre juego Carcassonne.
-        <br><br>
-        En 1999 viajó a la región de Carcasona para investigar sobre los Cátaros, donde surgiría la idea de lo que se
-        convertiría en el juego de mesa Carcassonne. Dicho juego sería presentado en la feria SPIEL del año 2000 de la
-        mano de
-        Hans im Glück, donde venderían 2000 ejemplares para convertirse rápidamente en el juego de mesa más vendido en
-        Alemania.
-        <br><br><br>
-        <b>“La gente quiere juegos muy simples o muy complejos. Todo lo que está en el medio es difícil. Creo que hoy en
-          día tal
-          vez ningún editor aceptaría más un juego como Carcassonne porque está en algún punto intermedio".</b><br>
+        <!-- Botón de menú hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Botón de menú hamburguesa -->
 
-        – Klaus-Jürgen Wrede : Entrevista con Hannah Schmitt en el General-Anzeiger Bonn (Carcassonne, 2016)
-      </p>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active px-5" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <!-- Menú despelegable Extensiones -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-5" href="../pages/expansiones.html" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Expansiones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../pages/expansiones/expansiones_expansiones.html">Expansiones</a>
+                </li>
+                <li><a class="dropdown-item" href="../pages/expansiones/spin_off.html">Spin-Off</a></li>
+                <li><a class="dropdown-item" href="../pages/expansiones/mini_expansiones.html">Mini Expansiones</a></li>
+                <li><a class="dropdown-item" href="../pages/expansiones/especiales.html">Especiales</a></li>
+              </ul>
+            </li>
+            <!-- Menú despelegable Extensiones -->
+
+            <li class="nav-item">
+              <a class="nav-link px-5" href="../pages/reglas.html">Reglas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5" href="#">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Menú navegable con Bootstrap -->
+
+  <!-- Main que contiene las section acerca del autor y las editoriales -->
+  <main class="acerca_de__main">
+
+    <!-- Article Autor con Bootstrap -->
+    <section class="acerca_de__section card m-5">
+      <article class="acerca_de__main__div row g-0 d-flex justify-content-center align-items-center">
+        <div class="col-md-2">
+          <img src="../images/acerca_de/klaus-jurgen.png" class="img-fluid rounded-start" alt="Klaus-Jürgen Wrede">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title mb-5">Klaus-Jürgen Wrede</h2>
+            <p class="card-text">Klaus-Jürgen Wrede nació en el año 1963 en Alemania. Estudió teología católica y
+              música, profesiones que
+              ejercería como
+              profesor hasta 2009, incluso después de lanzar su célebre juego Carcassonne.
+              <br><br>
+              En 1999 viajó a la región de Carcasona para investigar sobre los Cátaros, donde surgiría la idea de lo que
+              se
+              convertiría en el juego de mesa Carcassonne. Dicho juego sería presentado en la feria SPIEL del año 2000
+              de la
+              mano de
+              Hans im Glück, donde venderían 2000 ejemplares para convertirse rápidamente en el juego de mesa más
+              vendido en
+              Alemania.
+              <br><br><br>
+              <b>“La gente quiere juegos muy simples o muy complejos. Todo lo que está en el medio es difícil. Creo que
+                hoy en
+                día tal
+                vez ningún editor aceptaría más un juego como Carcassonne porque está en algún punto
+                intermedio".</b><br>
+
+              – Klaus-Jürgen Wrede : Entrevista con Hannah Schmitt en el General-Anzeiger Bonn (Carcassonne, 2016)
+            </p>
+          </div>
+        </div>
+      </article>
     </section>
-    <section>
-      <article>
-        <h2>Hans im Glück</h2>
-        <img src="../images/acerca_de/hans_im_glueck.png" alt="">
-        <p>Se trata de una empresa alemana de juegos sobre mesa, que si bien ha ganado mucha fama en su país, no se
-          dedican a
-          comercializar en el extranjero, sino que subcontratan la producción y ventas de sus productos a otras empresas
-          como es
-          el caso de Devir para sus versiones en español, teniendo al menos el 95% de su producción en Europa, ya que
-          quieren ser
-          partícipes en la lucha contra el calentamiento global y la desigualdad. Por esta misma razón, en el caso de
-          sus ventas
-          en EEUU, han decidido trasladar su producción a dicho país para minimizar el envío de contenedores a través
-          del
-          Atlántico. Actualmente están prestando más atención en el uso de recursos sostenibles.
-          <br><br>
-          Además de su perspectiva ecológica y económica al trabajar con diferentes empresas asociadas, desde hace ya
-          algunos años
-          hacen especial caso a la perspectiva de género, lo que se ve reflejado en la descripción de las reglas, entre
-          otros.
-        </p>
+    <!-- Article Autor con Bootstrap -->
+
+
+
+    <section class="row ">
+      <!-- Article Hans im Glück con Bootstrap -->
+      <article class=" card m-5 col-6 ">
+        <div class="row g-0 d-flex justify-content-center align-items-center">
+          <div class="col-3 d-flex justify-content-center">
+            <img src="../images/acerca_de/hans_im_glueck.png" class="img-fluid rounded-start" alt="Hans im Glück">
+          </div>
+          <div class="col-9">
+            <div class="card-body">
+              <h2 class="card-title mb-5">Hans im Glück</h2>
+              <p class="card-text">Se trata de una empresa alemana de juegos sobre mesa, que si bien ha ganado mucha
+                fama
+                en su país, no se dedican a comercializar en el extranjero, sino que subcontratan la producción y ventas
+                de sus productos a otras
+                empresas como es el caso de Devir para sus versiones en español, teniendo al menos el 95% de su
+                producción
+                en Europa, ya que quieren ser partícipes en la lucha contra el calentamiento global y la desigualdad.
+                Por
+                esta misma razón, en el caso de sus ventas en EEUU, han decidido trasladar su producción a dicho país
+                para
+                minimizar el envío de contenedores a través del Atlántico. Actualmente están prestando más atención en
+                el
+                uso de recursos sostenibles.
+                <br><br>
+                Además de su perspectiva ecológica y económica al trabajar con diferentes empresas asociadas, desde hace
+                ya algunos años hacen especial caso a la perspectiva de género, lo que se ve reflejado en la descripción
+                de las reglas,entre otros.
+              </p>
+            </div>
+          </div>
+        </div>
       </article>
-      <article>
-        <h2>Devir</h2>
-        <img src="../images/acerca_de/devir.jpg" alt="">
-        <p>Surgió en 1987 de la mano de un grupo de ingenieros informáticos brasileños aficionados al comic, quienes
-          decidieron
-          escoger y distribuir las mejores historias de la cultura popular norteamericana.
-          <br><br>
-          Actualmente cuenta con un grupo de profesionales europeos y americanos que comercializan juegos de rol, juegos
-          de cartas
-          coleccionables, novelas gráficas y juegos de mesa, tratandose así en el mayor editor en español, portugués y
-          catalán de
-          juegos modernos.
-        </p>
+      <!-- Article Hans im Glück con Bootstrap -->
+
+      <!-- Article Devir con Bootstrap -->
+      <article class="card m-5 col-4">
+        <div class="row g-0 d-flex justify-content-center align-items-center">
+          <div class="col-md-4">
+            <img src="../images/acerca_de/devir.jpg" class="img-fluid rounded-start" alt="Klaus-Jürgen Wrede">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title my-4">Devir</h2>
+              <p class="card-text mt-5">Surgió en 1987 de la mano de un grupo de ingenieros informáticos brasileños
+                aficionados
+                al comic, quienes decidieron escoger y distribuir las mejores historias de la cultura popular
+                orteamericana. <br><br>
+                Actualmente cuenta con un grupo de profesionales europeos y americanos que comercializan juegos de rol,
+                juegos de cartas coleccionables, novelas gráficas y juegos de mesa, tratandose así en el mayor editor en
+                español, portugués y catalán de juegos modernos.
+              </p>
+            </div>
+          </div>
+        </div>
       </article>
+      <!-- Article Devir con Bootstrap -->
     </section>
 
   </main>
 
-  <!--Footer-->
-  <footer class="footer">
-    <div class="footer__logo"><a href="../index.html"><img src="../images/footer/logo.png" alt="Logo"></a></div>
-    <div class="footer__enlaces">
-      <h6>Enlaces de interes</h6>
-      <div class="footer__enlaces__links">
-        <a href="https://www.instagram.com/hig_games/" target="_blank">
-          <iconify-icon class="footer__i" icon="akar-icons:instagram-fill"></iconify-icon>
-        </a>
-        <a href="https://youtu.be/zIeyB3ykf1s" target="_blank">
-          <iconify-icon class="footer__i " icon="ant-design:youtube-outlined"></iconify-icon>
-        </a>
-        <a href="https://devir.es/carcassonne" target="_blank">
-          <iconify-icon class="footer__i" icon="akar-icons:shopping-bag"></iconify-icon>
-        </a>
-        <a href="https://devir.com.ar/" target="_blank" class="footer__a__letras">Devir Argentina</a>
-        <a href="https://www.hans-im-glueck.de/carcassonne20/jubilaeums-produkte.html#content" target="_blank"
-          class="footer__a__letras">Hans im Glück</a>
-      </div>
-    </div>
-    <p>Copyright Carcassonne en Español. Creado por Florencia Marchesi</p>
-  </footer>
+  <!-- Footer Bootstrap-->
+  <footer class="text-center body__footer mt-5">
+    <!-- Grid container -->
+    <div class="container pt-2">
 
-  <!--Script para poder enlazar íconos-->
-  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-  <!--Script para enlazar JS de Bootstrap-->
+      <!-- Section: Social media -->
+      <section class="mb-2">
+
+        <!-- Youtube -->
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://youtu.be/zIeyB3ykf1s" target="_blank"
+          role="button" data-mdb-ripple-color="dark"><i class="fa-brands fa-youtube"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+          href="https://twitter.com/CarcassonneEs?s=20&t=7tzHU66nHddWiaU22jvngg" target="_blank" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.instagram.com/hig_games/" target="_blank"
+          role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Hans im Glück -->
+        <a class=" footer__text btn btn-link btn-floating btn-lg  m-1"
+          href="https://www.hans-im-glueck.de/carcassonne20/jubilaeums-produkte.html#content" target="_blank"
+          role="button" data-mdb-ripple-color="dark">Hans im Glück</a>
+
+        <!-- Devir Argentina -->
+        <a class="footer__text btn btn-link btn-floating btn-lg m-1 " href="https://devir.com.ar/" target="_blank"
+          role="button" data-mdb-ripple-color="dark">Devir Argentina</a>
+      </section>
+
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="footer__copyright text-center px-2 align-baseline">
+      © 2022 Copyright: Florencia Marchesi
+
+      <!-- Git Hub -->
+      <a class="footer__copyright btn btn-link btn-floating btn-lg px-2" href="https://github.com/FlorMarchesi"
+        target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+
+      <!-- Linkedin -->
+      <a class="footer__copyright btn btn-link btn-floating btn-lg px-2"
+        href="https://www.linkedin.com/in/florencia-marchesi/" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer Bootstrap -->
+
+  <!-- Script para poder enlazar íconos Font Awesome-->
+  <script src="https://kit.fontawesome.com/f3fcaf10f2.js" crossorigin="anonymous"></script>
+
+  <!-- Script para enlazar JS de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
