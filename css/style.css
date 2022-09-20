@@ -1,17 +1,17 @@
-/*Para importar la tipografía*/
+/* Para importar la tipografía */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 
-/*Paleta de Colores*/
+/* Paleta de Colores */
 :root {
-  /* Bootstrap */
+  /* SCSS */
   --black: rgba(0, 8, 20, 1);
   --blue: rgba(0, 29, 61, 1);
-  --blue-hell: rgb(0, 34, 70);
+  --blue-hell: rgb(1, 45, 91);
   --gold: rgba(255, 214, 10, 1);
-  --gold-hell: rgb(253, 223, 70);
+  --gold-hell: rgb(255, 232, 118);
 }
 
-/*Reseteo general*/
+/* Reseteo general */
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +19,15 @@
   font-size: 18px;
 }
 
-/*Estilo para todas las páginas*/
+/* Estilo para todas las páginas */
 
-/*Estilo del body*/
-body {
+/* Estilo del body */
+.body {
   font-family: Barlow, sans-serif;
+  background-color: var(--black);
 }
 
-/*Header*/
+/* Header */
 .header {
   width: 100vw;
   padding: 12px 0;
@@ -47,15 +48,19 @@ body {
 
 }
 
-/*Nav*/
-.nav{
-
-  background-color: var(--gold-hell);
+/* Nav */
+.nav {
+  background-color: var(--blue);
 }
 
 .nav a {
-  color: var(--blue);
+  color: var(--gold);
+  font-size: 1.1rem;
   padding: 3px 50px;
+  display: block;
+  width: 200px;
+  text-align: center;
+
 }
 
 .nav ul {
@@ -65,112 +70,67 @@ body {
 
 /*El color cambia al pasar el mouse encima*/
 .nav a:hover {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+
+
+/* Footer */
+.body__footer {
+  background-color: var(--blue);
+}
+
+.body__footer a {
+  text-decoration: none;
+  color: var(--gold-hell);
+}
+.body__footer a:hover{
+  color: var(--gold);
+}
+
+.footer__text {
+  font-size: 0.8rem;
+}
+
+.footer__copyright {
   background-color: var(--blue-hell);
   color: var(--gold-hell);
 }
 
-
-/*Footer*/
-.footer {
-  color: var(--blue);
-  background-color: var(--yellow);
-  padding-top: 20px;
-}
-
-.footer__logo {
-  display: inline-block;
-  width: 45vw;
-  height: 100px;
-  text-align: center;
-}
-
-.footer__logo img {
-  width: 50px;
-  height: auto;
-  position: relative;
-  top: -30px;
-
-}
-
-.footer__enlaces {
-  position: relative;
-  display: inline-block;
-  width: 45vw;
-  height: 100px;
-  text-align: center;
-}
-
-.footer__enlaces h6 {
-  font-size: 1.2rem;
-  color: var(--black);
-}
-
-.footer__a__letras {
-  display: block;
-  text-decoration: none;
-  color: var(--blue);
-  font-weight: 400;
-  padding: 5px 0;
-}
-
-.footer__i {
-  font-size: 2rem;
-  color: var(--blue);
-  padding: 15px 15px 5px;
-  font-weight: 400;
-}
-
-.footer p {
-  text-align: center;
-}
-
 /*___________________________________________________*/
 
-/*Estilo para la página principal (index)*/
+/* Estilo para la página principal (index) */
 
-/*Edición 20 Aniversario*/
+/* Edición 20 Aniversario */
+.ed__aniversario a{
+  text-decoration: none;
+}
 /*img*/
-.ed__aniversario__img{
+.ed__aniversario__img {
   width: 500px;
 }
 
-.container__ed__aniversario__h2{
+.ed__aniversario__img:hover{
+  opacity: 0.8;
+}
+.container__ed__aniversario__h2 {
   color: var(--gold);
   font-weight: 700;
   font-size: 4rem;
 }
 
 /*Article Historia*/
-.historia {
-  width: 80vw;
-  height: auto;
+
+.main__historia h3 {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 4rem;
 }
 
-.historia h3 {
-  font-size: 2rem;
-  padding: 50px;
-  margin-top: 100px;
-}
-
-.historia__p {
-  font-size: 1.5rem;
-  padding: 0 100px;
-  line-height: 50px;
-}
-
-/*Aside Shop*/
-.aside__shop {
-  width: 15vw;
-  height: 500px;
-  background-color: var(--blue-hell);
-}
-
-.aside__shop a {
-  text-decoration: none;
-  display: block;
-  justify-content: center;
-  color: var(--yellow);
-
+.main__historia p {
+  font-size: 1.25rem;
+  color: var(--gold-hell);
 }
 
 /*___________________________________________________________________*/
