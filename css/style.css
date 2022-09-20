@@ -178,6 +178,7 @@ main img {
 }
 .acerca_de__main h2{
   font-size: 3rem;
+  color: var(--gold);
   font-weight: 700;
 }
 
@@ -189,14 +190,29 @@ main img {
 }
 
 /*__________________________________________________________________________________*/
-/*Shop*/
-.section__shop {
-  width: 100vw;
-  position: relative;
+/* Contacto */
+.contacto__main{
+  display: flex;
   justify-content: center;
 }
+.contacto__main h2{
+  color: var(--gold);
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+.contacto__main__section{
+  background-color: var(--blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+.contacto__main__enviar button{
+  width: 200px;
+  padding: 10px 5px;
+  margin-top: 50px;
+  background-color: var(--gold-hell);
+  color: var(--blue);
+  font-weight: 700;
+  border-radius: 10px;
 
-.shop__iframe__mla iframe {
-  width: 80vw;
-  height: 1000px;
 }
