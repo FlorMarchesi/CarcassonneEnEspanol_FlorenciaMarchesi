@@ -78,7 +78,9 @@
   display: block;
   width: 300px;
   text-align: center;
-
+}
+.nav a:visited{
+  color: var(--gold);
 }
 
 .nav ul {
@@ -158,13 +160,45 @@
 
 /*Reglas*/
 
-main img {
-  /*Provisional*/
-  width: 150px;
+/* Tamaño imágenes*/
+.reglas__main img{
+  width: 280px;
+  height: auto;
+}
+.reglas__main__juego_base img{
+  width: 300px;
+  height: auto;
+}
+#nueva__edicion{
+  width: 350px;
   height: auto;
 }
 
+#circo{
+  width: 380px;
+  height: auto;
+}
 
+.reglas__main article{
+  background-color: var(--blue);
+  border-radius: 20px;
+}
+
+.reglas__main a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reglas__h{
+  color: var(--gold);
+}
+.reglas__main h3{
+  font-size: 1.5rem;
+}
+#star_wars{
+  width: 260px;
+  height: auto;
+}
 /*__________________________________________________________*/
 
 /*Acerca de*/
