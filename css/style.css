@@ -4,10 +4,10 @@
 /* Paleta de Colores */
 :root {
   /* SCSS */
-  --black: rgba(0, 8, 20, 1);
-  --blue: rgba(0, 29, 61, 1);
+  --black: rgb(0, 8, 20);
+  --blue: rgb(0, 29, 61);
   --blue-hell: rgb(1, 45, 91);
-  --gold: rgba(255, 214, 10, 1);
+  --gold: rgb(255, 214, 10);
   --gold-hell: rgb(255, 232, 118);
 }
 
@@ -25,6 +25,8 @@
 .body {
   font-family: Barlow, sans-serif;
   background-color: var(--black);
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -33,7 +35,7 @@
   padding: 12px 0;
   justify-content: center;
   align-items: baseline;
-  background-image: url("../images/header/juego-mesa-carcassonne.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/header/juego-mesa-carcassonne.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -44,7 +46,7 @@
 }
 
 /* Animación para que el logo de vuelta */
-.header__div__img {
+.header__div__img:hover {
   animation: rotacion 2.5s 1 linear;
 }
 
@@ -71,6 +73,10 @@
   background-color: var(--blue);
 }
 
+.nav__boton {
+  color: var(--gold);
+}
+
 .nav a {
   color: var(--gold);
   font-size: 1.1rem;
@@ -79,7 +85,8 @@
   width: 300px;
   text-align: center;
 }
-.nav a:visited{
+
+.nav a:visited {
   color: var(--gold);
 }
 
@@ -129,8 +136,16 @@
   width: 500px;
 }
 
-.ed__aniversario__img:hover {
+.img__oscuro:hover {
   opacity: 0.8;
+}
+
+.img__claro {
+  opacity: 0.7;
+}
+
+.img__claro:hover {
+  opacity: 1.0;
 }
 
 .container__ed__aniversario__h2 {
@@ -138,6 +153,7 @@
   font-weight: 700;
   font-size: 4rem;
 }
+
 
 /*Article Historia*/
 
@@ -152,8 +168,46 @@
   color: var(--gold-hell);
 }
 
+
 /*___________________________________________________________________*/
-/*Expansiones*/
+/*Expansiones y Reglas */
+.estilo__img img {
+  width: 280px;
+  height: auto;
+}
+
+.estilo__h {
+  color: var(--gold);
+}
+
+/* Expansiones */
+.hover {
+  background-color: var(--blue);
+  border-radius: 20px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0.5;
+}
+
+.hover h5 {
+  font-weight: 700;
+}
+
+.hover p {
+  color: var(--gold-hell);
+  font-weight: 700;
+}
+
+.expansiones__main article {
+  background-color: var(--blue);
+  border-radius: 20px;
+}
+
+/*Todavía no funciona */
+/*.exp__1 img:hover  .hover__1{
+  visibility: visible;
+  top: 100px;
+}*/
 
 
 /*__________________________________________________________________*/
@@ -161,44 +215,42 @@
 /*Reglas*/
 
 /* Tamaño imágenes*/
-.reglas__main img{
-  width: 280px;
-  height: auto;
-}
-.reglas__main__juego_base img{
+
+.reglas__main__juego_base img {
   width: 300px;
   height: auto;
 }
-#nueva__edicion{
+
+#nueva__edicion {
   width: 350px;
   height: auto;
 }
 
-#circo{
+#circo {
   width: 380px;
   height: auto;
 }
 
-.reglas__main article{
+.reglas__main article {
   background-color: var(--blue);
   border-radius: 20px;
 }
 
-.reglas__main a{
+.reglas__main a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.reglas__h{
-  color: var(--gold);
-}
-.reglas__main h3{
+
+.reglas__main h3 {
   font-size: 1.5rem;
 }
-#star_wars{
+
+#star_wars {
   width: 260px;
   height: auto;
 }
+
 /*__________________________________________________________*/
 
 /*Acerca de*/
@@ -210,7 +262,8 @@
   color: var(--gold-hell);
 
 }
-.acerca_de__main h2{
+
+.acerca_de__main h2 {
   font-size: 3rem;
   color: var(--gold);
   font-weight: 700;
@@ -219,28 +272,32 @@
 .acerca_de__main section {
   background-color: var(--black);
 }
+
 .acerca_de__main article {
   background-color: var(--blue);
 }
 
 /*__________________________________________________________________________________*/
 /* Contacto */
-.contacto__main{
+.contacto__main {
   display: flex;
   justify-content: center;
 }
-.contacto__main h2{
+
+.contacto__main h2 {
   color: var(--gold);
   font-weight: 700;
   display: block;
   text-align: center;
 }
-.contacto__main__section{
+
+.contacto__main__section {
   background-color: var(--blue);
   padding: 20px;
   border-radius: 10px;
 }
-.contacto__main__enviar button{
+
+.contacto__main__enviar button {
   width: 200px;
   padding: 10px 5px;
   margin-top: 50px;
@@ -250,3 +307,70 @@
   border-radius: 10px;
 
 }
+
+/* _____________________________________________________________*/
+
+/* Media Queries */
+
+/* Mobil */
+
+@media (max-width: 767px) {
+
+  /* Header */
+  .header__img__2 {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .header__div__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Index */
+  /*Ed. 20 Aniversario */
+  .ed__aniversario__div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ed__aniversario__div h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* Historia*/
+  .main__historia h3 {
+    font-size: 3rem;
+  }
+
+  /* Index */
+
+  /* Reglas */
+.reglas__ocultar{
+  position: absolute;
+  visibility: hidden;
+}
+
+  /* Reglas */
+
+
+
+  /* Mobil */
+
+  /* Tablet */
+  /*
+  @media (min-width: 768px) and (max-width:1023px) {
+
+    /Ed. 20 Aniversario/
+    .ed__aniversario__div {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }*/
+
+  /* Tablet*/
+
+
+  /* Escritorio */
+  @media (min-width: 1024px) {}
