@@ -65,7 +65,6 @@
 
 .header__img__2 {
   width: 500px;
-
 }
 
 /* Nav */
@@ -116,7 +115,6 @@
   color: var(--gold);
 }
 
-
 .footer__copyright {
   background-color: var(--blue-hell);
   color: var(--gold-hell);
@@ -134,18 +132,6 @@
 /*img*/
 .ed__aniversario__img {
   width: 500px;
-}
-
-.img__oscuro:hover {
-  opacity: 0.8;
-}
-
-.img__claro {
-  opacity: 0.7;
-}
-
-.img__claro:hover {
-  opacity: 1.0;
 }
 
 .container__ed__aniversario__h2 {
@@ -275,6 +261,7 @@
 
 .acerca_de__main article {
   background-color: var(--blue);
+  border-radius: 20px;
 }
 
 /*__________________________________________________________________________________*/
@@ -305,7 +292,11 @@
   color: var(--blue);
   font-weight: 700;
   border-radius: 10px;
+}
 
+.contacto__main__enviar button:hover{
+  background-color: var(--blue-hell);
+  color: var(--gold);
 }
 
 /* _____________________________________________________________*/
@@ -325,6 +316,10 @@
   .header__div__img {
     display: flex;
     justify-content: center;
+  }
+
+  main {
+    padding: 0 10%;
   }
 
   /* Index */
@@ -347,30 +342,48 @@
   /* Index */
 
   /* Reglas */
-.reglas__ocultar{
-  position: absolute;
-  visibility: hidden;
-}
+  .reglas__ocultar {
+    position: absolute;
+    visibility: hidden;
+  }
 
   /* Reglas */
 
 
+}
 
-  /* Mobil */
+/* Mobil */
 
-  /* Tablet */
-  /*
-  @media (min-width: 768px) and (max-width:1023px) {
+/* Tablet */
+/*
+    @media (min-width: 768px) and (max-width:1023px) {
 
-    /Ed. 20 Aniversario/
-    .ed__aniversario__div {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  }*/
+      /Ed. 20 Aniversario/
+      .ed__aniversario__div {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }*/
 
-  /* Tablet*/
+/* Tablet*/
 
 
-  /* Escritorio */
-  @media (min-width: 1024px) {}
+/* Escritorio */
+@media (min-width: 1024px) {
+  .body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .img__oscuro:hover {
+    opacity: 0.8;
+  }
+
+  .img__claro {
+    opacity: 0.7;
+  }
+
+  .img__claro:hover {
+    opacity: 1.0;
+  }
+}

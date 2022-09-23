@@ -15,7 +15,7 @@
 
 <body class="body">
   <!-- Header -->
-  <header class="header d-flex">
+  <header class="header  container-fluid d-flex">
     <div class="header__div__img d-inline-block ">
       <a href="../index.html"><img class="header__img" src="../images/header/logo.png" alt="Logo"></a>
     </div>
@@ -31,33 +31,31 @@
       <div class="container-fluid nav__div">
 
         <!-- Botón de menú hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=" nav__boton"><i class="fa-solid fa-bars"></i></span>
+          <span class="nav__boton"><i class="fa-solid fa-bars"></i></span>
         </button>
         <!-- Botón de menú hamburguesa -->
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active px-5" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <!-- Menú despelegable Extensiones -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-5" href="../pages/expansiones.html" id="navbarDropdownMenuLink"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Expansiones
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../pages/expansiones/expansiones_expansiones.html">Expansiones</a>
-                </li>
-                <li><a class="dropdown-item" href="../pages/expansiones/spin_off.html">Spin-Off</a></li>
-                <li><a class="dropdown-item" href="../pages/expansiones/mini_expansiones.html">Mini Expansiones</a></li>
-                <li><a class="dropdown-item" href="../pages/expansiones/especiales.html">Especiales</a></li>
-              </ul>
-            </li>
-            <!-- Menú despelegable Extensiones -->
-
+          <!-- Menú despelegable Extensiones -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-5" href="pages/expansiones.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Expansiones
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="../pages/expansiones/expansiones_expansiones.html">Expansiones</a></li>
+              <li><a class="dropdown-item" href="../pages/expansiones/spin_off.html">Spin-Off</a></li>
+              <li><a class="dropdown-item" href="../pages/expansiones/mini_expansiones.html">Mini Expansiones</a></li>
+              <li><a class="dropdown-item" href="../pages/expansiones/especiales.html">Especiales</a></li>
+            </ul>
+          </li>
+          <!-- Menú despelegable Extensiones -->
             <li class="nav-item">
               <a class="nav-link px-5" href="#">Reglas</a>
             </li>
@@ -73,7 +71,6 @@
     </nav>
   </div>
   <!-- Menú navegable con Bootstrap -->
-
 
   <main class="estilo__img reglas__main container-fluid">
 
@@ -241,11 +238,11 @@
 
     <!--SPIN-OFF-->
     <h2 class="estilo__h pb-3">Spin-Off</h2>
-    <section class="container row justify-content-center">
+    <section class="container-fluid row justify-content-center">
 
-      <div class="container-fluid row">
+      <div class="container-fluid row justify-content-center">
         <!-- Casadores y Recolectores -->
-        <article class="col-sm col-lg-4  m-3 img__claro">
+        <article class="col-sm-10 col-lg-4 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Casadores y Recolectores</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/cazadores_y_recolectores.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/CasadoresYRecolectores.png"
@@ -254,7 +251,7 @@
         <!-- Casadores y Recolectores -->
 
         <!-- Edición Invierno -->
-        <article class="col m-3 img__claro">
+        <article class="col-sm-10 col-lg-3 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Edición Invierno</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/edicion_invierno.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/EdicionInvierno.png" alt="Spin-Off Edición Invierno"></a>
@@ -262,7 +259,7 @@
         <!-- Edición Invierno -->
 
         <!-- Mares del Sur -->
-        <article class="col-sm col-lg-4 m-3 img__claro">
+        <article class="col-sm-10 col-lg-4 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Mares del Sur</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/mares_del_sur.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/MaresDelSur_front.png" alt="Spin-Off Mares del Sur"></a>
@@ -270,9 +267,9 @@
         <!-- Mares del Sur -->
       </div>
 
-      <div class="row">
+      <div class="container row justify-content-center">
         <!-- Safari -->
-        <article class="col-4 m-3 img__claro">
+        <article class="col-sm-10 col-lg-4 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Safari</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/safari.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/Safari.png" alt="Spin-Off Safari"></a>
@@ -280,7 +277,7 @@
         <!-- Safari -->
 
         <!-- Star Wars -->
-        <article class="col m-3 img__claro">
+        <article class="col-sm-10 col-lg-3 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Star Wars</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/star_wars.pdf" target="_blank"><img id="star_wars"
               src="../images/expansiones/spin_off/StarWars.png" alt="Spin-Off Star Wars"></a>
@@ -288,7 +285,7 @@
         <!-- Star Wars -->
 
         <!-- Amazonas -->
-        <article class="col-4 m-3 img__claro">
+        <article class="col-sm-10 col-lg-4 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Amazonas</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/amazonas.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/Amazonas.png" alt="Spin-Off Amazonas"></a>
@@ -296,9 +293,9 @@
         <!-- Amazonas -->
       </div>
 
-      <div class="row">
+      <div class="container row justify-content-center">
         <!-- Goldrush -->
-        <article class="col-4 m-3 img__claro">
+        <article class="col-sm-10 col-lg-4 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Goldrush</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/Goldrausch.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/Goldrusch.png" alt="Spin-Off Goldrusch"></a>
@@ -306,7 +303,7 @@
         <!-- Goldrush -->
 
         <!-- Junior -->
-        <article class="col m-3 img__claro">
+        <article class="col-sm-10 col-lg-3 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Junior</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/junior.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/Junior.png" alt="Spin-Off Junior"></a>
@@ -314,7 +311,7 @@
         <!-- Junior -->
 
         <!-- Sobre Colinas y Valles -->
-        <article class="col-4 m-3 img__claro">
+        <article class="col-sm-10 col-lg-4 m-3 img__claro">
           <h3 class="estilo__h row justify-content-center py-2">Sobre Colinas y Valles</h3>
           <a class="row" href="../images/reglas/reglas_spin_off/sobre_colinas_y_valles.pdf" target="_blank"><img
               src="../images/expansiones/spin_off/SobreColinasYValles.png" alt="Spin-Off Sobre Colinas y Valles"></a>
@@ -326,10 +323,10 @@
     <!--MINI EXPANSIONES-->
     <h2 class="estilo__h">Mini Expansiones</h2>
 
-    <section class="container row justify-content-center">
-      <div class="row">
+    <section class="container-fluid row justify-content-center">
+      <div class="container-fluid row justify-content-center">
       <!-- 1. Las Máquinas Voladoras -->
-      <article class="col-4 m-3 img__claro">
+      <article class="col-sm-10 col-lg-4 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">1. Las Máquinas Voladoras</h3>
         <a class="row py-2" href="../images/reglas/reglas_mini_expansiones/1_maquinas_voladoras.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/1.LasMaquinasVoladoras.png"
@@ -338,7 +335,7 @@
       <!-- 1. Las Máquinas Voladoras -->
 
       <!-- 2. Los Despachos -->
-      <article class="col m-3 img__claro">
+      <article class="col-sm-10 col-lg-3 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">2. Los Despachos</h3>
         <a class="row" href="../images/reglas/reglas_mini_expansiones/2_despachos.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/2.LosDespachos.png" alt="Mini Expansión Los Despachos"></a>
@@ -346,7 +343,7 @@
       <!-- 2. Los Despachos -->
 
       <!-- 3. Los Transbordadores -->
-      <article class="col-4 m-3 img__claro">
+      <article class="col-sm-10 col-lg-4 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">3. Los Transbordadores</h3>
         <a class="row" href="../images/reglas/reglas_mini_expansiones/3_trasbordadores.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/3.LosTransbordadores.png"
@@ -355,9 +352,9 @@
       <!-- 3. Los Transbordadores -->
       </div>
 
-        <div class="row">
+        <div class="container-fluid row justify-content-center">
       <!-- 4. Las Minas de Oro -->
-      <article class="col-4 m-3 img__claro">
+      <article class="col-sm-10 col-lg-4 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">4. Las Minas de Oro</h3>
         <a class="row py-2" href="../images/reglas/reglas_mini_expansiones/4_minas_de_oro.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/4.LasMinasDeOro.png" alt="Mini Expansión Las Minas de Oro"></a>
@@ -365,7 +362,7 @@
       <!-- 4. Las Minas de Oro -->
 
       <!-- 5. El Mago y la Bruja -->
-      <article class="col m-3 img__claro">
+      <article class="col-sm-10 col-lg-3 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">5. El Mago y la Bruja</h3>
         <a class="row" href="../images/reglas/reglas_mini_expansiones/5_mago_y_bruja.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/5.ElMagoYLaBruja.png"
@@ -374,7 +371,7 @@
       <!-- 5. El Mago y la Bruja -->
 
       <!-- 6. Los Ladrones -->
-      <article class="col-4 m-3 img__claro">
+      <article class="col-sm-10 col-lg-4 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">6. Los Ladrones</h3>
         <a class="row py-2" href="../images/reglas/reglas_mini_expansiones/6_ladrones.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/6.LosLadrones.png" alt="Mini Expansión Los Ladrones"></a>
@@ -382,9 +379,9 @@
       <!-- 6. Los Ladrones -->
       </div>
 
-      <div class="container row justify-content-center">
+      <div class="container-fluid row justify-content-center">
       <!-- Viernes - Mares del Sur -->
-      <article class="col-5 m-3 img__claro">
+      <article class="col-sm-10 col-lg-5 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">Viernes - Mares del Sur</h3>
         <a class="row pb-2" href="../images/reglas/reglas_mini_expansiones/viernes_mares_del_sur.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/Viernes_MaresDelSur.png"
@@ -393,7 +390,7 @@
       <!-- Viernes - Mares del Sur -->
 
       <!-- El Hombre de Jengibre - Ed. de Invierno -->
-      <article class="col-5 m-3 img__claro">
+      <article class="col-sm-10 col-lg-5 m-3 img__claro">
         <h3 class="estilo__h row justify-content-center py-2">El Hombre de Jengibre - Ed. de Invierno</h3>
         <a class="row" href="../images/reglas/reglas_mini_expansiones/lebkuchenmann.pdf" target="_blank"><img
             src="../images/expansiones/mini_expansiones/ElHombreDeJengibre_EdicionInvierno.png"
