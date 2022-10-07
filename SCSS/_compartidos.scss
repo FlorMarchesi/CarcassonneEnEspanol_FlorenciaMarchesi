@@ -1,0 +1,18 @@
+/* Estilo del body */
+.body {
+  font-family: Barlow, sans-serif;
+  background-color: $black;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/*Expansiones y Reglas */
+.estilo__img img {
+  width: 280px;
+  height: auto;
+}
+
+/* Estilo de los títulos */
+.estilo__h {
+  color: $gold;
+}
