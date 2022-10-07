@@ -127,78 +127,88 @@ p {
   color: #ffe876; }
 
 /* Submenú */
-figure.effect-zoe figcaption {
-  top: auto;
-  bottom: 0;
-  padding: 1em;
-  height: 3.75em;
-  background: #fff;
-  color: #3c4a50;
-  transition: transform 0.35s;
-  transform: translate3d(0, 100%, 0); }
+.main_expansiones {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  list-style: none;
+  text-align: center;
+  /* Párrafo descriptivo */
+  /* Párrafo descriptivo */ }
+  .main_expansiones .main_expansiones__portadas {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    width: 320px;
+    text-align: center;
+    cursor: pointer;
+    /* Emergente */
+    /* Emergente */ }
+    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__img {
+      opacity: 0.2; }
+    .main_expansiones .main_expansiones__portadas:hover .description {
+      opacity: 1; }
+    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__emergente,
+    .main_expansiones .main_expansiones__portadas:hover h2,
+    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__emergente__div_iconos img {
+      transform: translate3d(0, 0, 0); }
+    .main_expansiones .main_expansiones__portadas:hover h2 {
+      transition-delay: 0.05s; }
+    .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__img {
+      height: 440px;
+      width: 300px; }
+    .main_expansiones .main_expansiones__portadas h2 {
+      word-spacing: -0.15em;
+      font-weight: 300;
+      font-size: 1rem;
+      text-align: center; }
+    .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__emergente {
+      padding: 2em;
+      background-color: #ffd60a;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      backface-visibility: hidden;
+      top: auto;
+      bottom: 0;
+      padding: 1em;
+      height: 3.75em;
+      transition: transform 0.5s;
+      transform: translate3d(0, 100%, 0);
+      /* Íconos del menú emergente */
+      /* Íconos del menú emergente */ }
+      .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__emergente img {
+        width: 20px;
+        height: auto; }
+      .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__emergente .main_expansiones__portadas__emergente__div_iconos {
+        color: #001d3d;
+        width: 100%;
+        margin-top: 13%;
+        /* Íconos del menú emergente */ }
+        .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__emergente .main_expansiones__portadas__emergente__div_iconos div {
+          display: inline-block; }
+          .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__emergente .main_expansiones__portadas__emergente__div_iconos div p {
+            color: #001d3d;
+            font-size: 0.9em;
+            display: inline-block; }
+  .main_expansiones .description {
+    position: absolute;
+    bottom: 3em;
+    padding: 1em;
+    color: #ffd60a;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    transition: opacity 0.5s; }
 
-figure.effect-zoe h2 {
-  float: left; }
-
-figure.effect-zoe p.icon-links a {
-  float: right;
-  color: #3c4a50;
-  font-size: 1.4em; }
-
-figure.effect-zoe:hover p.icon-links a:hover,
-figure.effect-zoe:hover p.icon-links a:focus {
-  color: #252d31; }
-
-figure.effect-zoe p.description {
+/* Common style */
+.main_expansiones figure .main_expansiones__portadas__emergente,
+.main_expansiones figure .main_expansiones__portadas__emergente > div {
   position: absolute;
-  bottom: 8em;
-  padding: 2em;
-  color: #fff;
-  text-transform: none;
-  font-size: 90%;
-  opacity: 0;
-  transition: opacity 0.35s; }
-
-figure.effect-zoe h2,
-figure.effect-zoe p.icon-links a {
-  transition: transform 0.35s;
-  transform: translate3d(0, 200%, 0); }
-
-figure.effect-zoe p.icon-links a span::before {
-  display: inline-block;
-  padding: 8px 10px; }
-
-.icon-eye::before {
-  content: '\e000'; }
-
-.icon-paper-clip::before {
-  content: '\e001'; }
-
-.icon-heart::before {
-  content: '\e024'; }
-
-figure.effect-zoe h2 {
-  display: inline-block; }
-
-figure.effect-zoe:hover p.description {
-  opacity: 1; }
-
-figure.effect-zoe:hover figcaption,
-figure.effect-zoe:hover h2,
-figure.effect-zoe:hover p.icon-links a {
-  transform: translate3d(0, 0, 0); }
-
-figure.effect-zoe:hover h2 {
-  transition-delay: 0.05s; }
-
-figure.effect-zoe:hover p.icon-links a:nth-child(3) {
-  transition-delay: 0.1s; }
-
-figure.effect-zoe:hover p.icon-links a:nth-child(2) {
-  transition-delay: 0.15s; }
-
-figure.effect-zoe:hover p.icon-links a:first-child {
-  transition-delay: 0.2s; }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /* Expansiones */
 .hover {
