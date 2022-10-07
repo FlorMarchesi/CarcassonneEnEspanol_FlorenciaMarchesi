@@ -5,12 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+
+  <!-- Linkeo de Animate.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Linkeo de CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Acerca de</title>
+  <!-- Logo de pestaña -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+  <!-- Mis estilos CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>Acerca de - Carcassonne</title>
 </head>
 
 <body class="body acerca_de__body">
@@ -44,8 +50,8 @@
             </li>
             <!-- Menú despelegable Extensiones -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-5" href="pages/expansiones.html" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle px-5" href="pages/expansiones.html" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Expansiones
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -53,7 +59,6 @@
                 </li>
                 <li><a class="dropdown-item" href="../pages/expansiones/spin_off.html">Spin-Off</a></li>
                 <li><a class="dropdown-item" href="../pages/expansiones/mini_expansiones.html">Mini Expansiones</a></li>
-                <li><a class="dropdown-item" href="../pages/expansiones/especiales.html">Especiales</a></li>
               </ul>
             </li>
             <!-- Menú despelegable Extensiones -->
@@ -75,103 +80,76 @@
   <!-- Menú navegable con Bootstrap -->
 
   <!-- Main que contiene las section acerca del autor y las editoriales -->
-  <main class="acerca_de__main">
-
+  <main class="acerca_de__main container">
     <!-- Article Autor con Bootstrap -->
-    <section class="acerca_de__section card m-5">
-      <article class="acerca_de__main__div row g-0 d-flex justify-content-center align-items-center">
-        <div class="col-md-2">
-          <img src="../images/acerca_de/klaus-jurgen.png" class="img-fluid rounded-start" alt="Klaus-Jürgen Wrede">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h2 class="card-title mb-5">Klaus-Jürgen Wrede</h2>
-            <p class="card-text">Klaus-Jürgen Wrede nació en el año 1963 en Alemania. Estudió teología católica y
-              música, profesiones que
-              ejercería como
-              profesor hasta 2009, incluso después de lanzar su célebre juego Carcassonne.
-              <br><br>
-              En 1999 viajó a la región de Carcasona para investigar sobre los Cátaros, donde surgiría la idea de lo que
-              se
-              convertiría en el juego de mesa Carcassonne. Dicho juego sería presentado en la feria SPIEL del año 2000
-              de la
-              mano de
-              Hans im Glück, donde venderían 2000 ejemplares para convertirse rápidamente en el juego de mesa más
-              vendido en
-              Alemania.
-              <br><br><br>
-              <b>“La gente quiere juegos muy simples o muy complejos. Todo lo que está en el medio es difícil. Creo que
-                hoy en
-                día tal
-                vez ningún editor aceptaría más un juego como Carcassonne porque está en algún punto
-                intermedio".</b><br>
+    <section class="row justify-content-center align-items-center m-5">
+      <div class="col-sm-12 col-md-12 col-xl-12">
+        <h2 class="mb-5">Klaus-Jürgen Wrede</h2>
+        <p>Klaus-Jürgen Wrede nació en el año 1963 en Alemania. Estudió teología católica y
+          música, profesiones que
+          ejercería como
+          profesor hasta 2009, incluso después de lanzar su célebre juego Carcassonne.
+          <br><br>
+          En 1999 viajó a la región de Carcasona para investigar sobre los Cátaros, donde surgiría la idea de lo que
+          se
+          convertiría en el juego de mesa Carcassonne. Dicho juego sería presentado en la feria SPIEL del año 2000
+          de la
+          mano de
+          Hans im Glück, donde venderían 2000 ejemplares para convertirse rápidamente en el juego de mesa más
+          vendido en
+          Alemania.
+          <br><br><br>
+          <b>“La gente quiere juegos muy simples o muy complejos. Todo lo que está en el medio es difícil. Creo que
+            hoy en
+            día tal
+            vez ningún editor aceptaría más un juego como Carcassonne porque está en algún punto
+            intermedio".</b><br>
 
-              – Klaus-Jürgen Wrede : Entrevista con Hannah Schmitt en el General-Anzeiger Bonn (Carcassonne, 2016)
-            </p>
-          </div>
-        </div>
-      </article>
+          – Klaus-Jürgen Wrede : Entrevista con Hannah Schmitt en el General-Anzeiger Bonn (Carcassonne, 2016)
+        </p>
+      </div>
     </section>
     <!-- Article Autor con Bootstrap -->
 
+    <section class="row container justify-content-center">
+    <!-- Article Hans im Glück con Bootstrap -->
+    <section class="col-sm-12 col-md-12 col-xl-5 justify-content-center align-items-center my-5 mx-2">
+        <h2 class="mb-5">Hans im Glück</h2>
+        <p>Se trata de una empresa alemana de juegos sobre mesa, que si bien ha ganado mucha
+          fama
+          en su país, no se dedican a comercializar en el extranjero, sino que subcontratan la producción y ventas
+          de sus productos a otras
+          empresas como es el caso de Devir para sus versiones en español, teniendo al menos el 95% de su
+          producción
+          en Europa, ya que quieren ser partícipes en la lucha contra el calentamiento global y la desigualdad.
+          Por
+          esta misma razón, en el caso de sus ventas en EEUU, han decidido trasladar su producción a dicho país
+          para
+          minimizar el envío de contenedores a través del Atlántico. Actualmente están prestando más atención en
+          el
+          uso de recursos sostenibles.
+          <br><br>
+          Además de su perspectiva ecológica y económica al trabajar con diferentes empresas asociadas, desde hace
+          ya algunos años hacen especial caso a la perspectiva de género, lo que se ve reflejado en la descripción
+          de las reglas,entre otros.
+        </p>
 
+    </section>
+    <!-- Article Hans im Glück con Bootstrap -->
 
-    <section class="row ">
-      <!-- Article Hans im Glück con Bootstrap -->
-      <article class=" card m-5 col-6 ">
-        <div class="row g-0 d-flex justify-content-center align-items-center">
-          <div class="col-3 d-flex justify-content-center">
-            <img src="../images/acerca_de/hans_im_glueck.png" class="img-fluid rounded-start" alt="Hans im Glück">
-          </div>
-          <div class="col-9">
-            <div class="card-body">
-              <h2 class="card-title mb-5">Hans im Glück</h2>
-              <p class="card-text">Se trata de una empresa alemana de juegos sobre mesa, que si bien ha ganado mucha
-                fama
-                en su país, no se dedican a comercializar en el extranjero, sino que subcontratan la producción y ventas
-                de sus productos a otras
-                empresas como es el caso de Devir para sus versiones en español, teniendo al menos el 95% de su
-                producción
-                en Europa, ya que quieren ser partícipes en la lucha contra el calentamiento global y la desigualdad.
-                Por
-                esta misma razón, en el caso de sus ventas en EEUU, han decidido trasladar su producción a dicho país
-                para
-                minimizar el envío de contenedores a través del Atlántico. Actualmente están prestando más atención en
-                el
-                uso de recursos sostenibles.
-                <br><br>
-                Además de su perspectiva ecológica y económica al trabajar con diferentes empresas asociadas, desde hace
-                ya algunos años hacen especial caso a la perspectiva de género, lo que se ve reflejado en la descripción
-                de las reglas,entre otros.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <!-- Article Hans im Glück con Bootstrap -->
-
-      <!-- Article Devir con Bootstrap -->
-      <article class="card m-5 col-4">
-        <div class="row g-0 d-flex justify-content-center align-items-center">
-          <div class="col-md-4">
-            <img src="../images/acerca_de/devir.jpg" class="img-fluid rounded-start" alt="Klaus-Jürgen Wrede">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h2 class="card-title my-4">Devir</h2>
-              <p class="card-text mt-5">Surgió en 1987 de la mano de un grupo de ingenieros informáticos brasileños
-                aficionados
-                al comic, quienes decidieron escoger y distribuir las mejores historias de la cultura popular
-                orteamericana. <br><br>
-                Actualmente cuenta con un grupo de profesionales europeos y americanos que comercializan juegos de rol,
-                juegos de cartas coleccionables, novelas gráficas y juegos de mesa, tratandose así en el mayor editor en
-                español, portugués y catalán de juegos modernos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <!-- Article Devir con Bootstrap -->
+    <!-- Article Devir con Bootstrap -->
+    <section class="col-sm-12 col-md-12 col-xl-5 justify-content-center align-items-center my-5 mx-2">
+        <h2 class="mb-5">Devir</h2>
+        <p>Surgió en 1987 de la mano de un grupo de ingenieros informáticos brasileños
+          aficionados
+          al comic, quienes decidieron escoger y distribuir las mejores historias de la cultura popular
+          orteamericana. <br><br>
+          Actualmente cuenta con un grupo de profesionales europeos y americanos que comercializan juegos de rol,
+          juegos de cartas coleccionables, novelas gráficas y juegos de mesa, tratandose así en el mayor editor en
+          español, portugués y catalán de juegos modernos.
+        </p>
+    </section>
+    <!-- Article Devir con Bootstrap -->
     </section>
 
   </main>

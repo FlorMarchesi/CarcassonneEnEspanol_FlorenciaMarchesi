@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Linkeo de Animate.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Linkeo de CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Logo de pestaña -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-  <!-- Linkeo de Animate.CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Mis estilos CSS -->
   <link rel="stylesheet" href="css/style.css">
-
-
 
   <title>Carcassonne en Español</title>
 
@@ -32,13 +33,14 @@
   <!-- Header -->
 
   <!-- Menú navegable con Bootstrap -->
-  <div class="nav justify-content-center mb-5">
+  <div class="nav justify-content-center">
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid nav__div">
 
         <!-- Botón de menú hamburguesa -->
-        <button class="navbar-toggler nav__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler nav__boton" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class=""><i class="fa-solid fa-bars"></i></span>
         </button>
         <!-- Botón de menú hamburguesa -->
@@ -58,7 +60,6 @@
                 <li><a class="dropdown-item" href="pages/expansiones/expansiones_expansiones.html">Expansiones</a></li>
                 <li><a class="dropdown-item" href="pages/expansiones/spin_off.html">Spin-Off</a></li>
                 <li><a class="dropdown-item" href="pages/expansiones/mini_expansiones.html">Mini Expansiones</a></li>
-                <li><a class="dropdown-item" href="pages/expansiones/especiales.html">Especiales</a></li>
               </ul>
             </li>
             <!-- Menú despelegable Extensiones -->
@@ -80,59 +81,68 @@
   <!-- Menú navegable con Bootstrap -->
 
   <!-- Página principal -->
-  <div class="container">
-    <div class="row">
-      <main class="col-12">
+  <main class="main_index container-fluid justify-content-center">
 
-        <!-- Section Edicion especial 20 Aniversario -->
-        <section class="ed__aniversario container-fluid d-flex justify-content-center">
-          <div class="ed__aniversario__div row align-items-center my-5">
-            <div class="col d-flex justify-content-center">
-              <a href="pages/expansiones/especiales.html"><img class="ed__aniversario__img img__oscuro"
-                  src="images/pag_principal/portada_ed_especial.png" alt="Portada edición 20º Aniversario"></a>
-            </div>
-            <div class="col container__ed__aniversario">
-              <a href="pages/expansiones/especiales.html">
-                <h2 class="container__ed__aniversario__h2 text-center pb-3">Edición 20º Aniversario</h2>
-              </a>
+    <!-- Section Nuevo Spin Off -->
+    <section class="main_index_sect_gold container-fluid row justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-xl-6">
+          <a href="pages/expansiones/spin_off.html">
+            <h2 class="text-center pb-3"><strong> Niebla Sobre Carcassonne (2022)</strong></h2>
+          </a>
+          <p class="text-center"><strong>Carcassonne acaba de lanzar el nuevo Spinn Off con motivo de Halloween!</strong></p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xl-6 d-flex justify-content-center">
+          <a href="pages/expansiones/spin_off.html"><img class="img__oscuro py-4"
+              src="images/pag_principal/NieblaSobreCarcassonne.png" alt="Portada Niebla Sobre Carcassone"></a>
+        </div>
+    </section>
+    <!-- Section Nuevo Spin Off -->
 
-            </div>
-          </div>
-        </section>
-        <!-- Section Edicion especial 20 Aniversario -->
+    <!-- Section Edicion especial 20 Aniversario -->
+    <section class="main_index_sect_ed_20 container-fluid row  justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-xl-6 d-flex justify-content-center">
+          <a href="pages/expansiones/especiales.html"><img class="img__oscuro py-4"
+              src="images/pag_principal/portada_ed_especial.png" alt="Portada edición 20º Aniversario"></a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-xl-6">
+          <a href="pages/expansiones/especiales.html">
+            <h2 class="container__ed__aniversario__h2 text-center pb-3"><strong>Edición 20º Aniversario</strong> </h2>
+          </a>
+        </div>
+    </section>
+    <!-- Section Edicion especial 20 Aniversario -->
 
+    <!-- Section Historia -->
+    <section class="main_index_sect_gold container-fluid row justify-content-center align-items-center">
+      <div class="col-sm-12 col-md-12 col-xl-6">
+        <a href="pages/expansiones/spin_off.html">
+          <h2 class="text-center pb-3"><strong> Historia</strong></h2>
+        </a>
 
-        <!-- Article Historia -->
-        <section class="container-fluid">
-          <article class="main__historia row  my-5 align-items-center ">
-            <div class="col-md-12 ">
-              <h3 class="text-center pb-3">Historia</h3>
-            </div>
-            <div class="col-md-12">
-              <p>Carcassonne fue diseñado por el alemán Klaus-Jürgen Wrede y publicado por primera vez en el año 2000 de
-                la
-                mano
-                de Hans im Glück para la versión en alemán y la editorial Devir en español.
-                <br><br>
-                Con ya más de 20 años en el mercado, el popular juego de mesa se ambienta en la época medieval, mas
-                concretamente en la cuidad que lleva su nombre. <br>
-                Si bien la historia de esta ciudad no es especialmente relevante para el juego, en
-                él podemos apreciar ilustraciones que hacen referencia a su impresionante castillo.
-                <br>
-              </p>
-            </div>
-          </article>
-        </section>
-        <!-- Article Historia -->
+      </div>
+      <div class="col-sm-12 col-md-12 col-xl-6 d-flex justify-content-center">
+        <p class="text-center py-5">Carcassonne fue diseñado por el alemán Klaus-Jürgen Wrede y publicado por primera vez en el año
+          2000 de
+          la
+          mano
+          de Hans im Glück para la versión en alemán y la editorial Devir en español.
+          <br><br>
+          Con ya más de 20 años en el mercado, el popular juego de mesa se ambienta en la época medieval, mas
+          concretamente en la cuidad que lleva su nombre. <br>
+          Si bien la historia de esta ciudad no es especialmente relevante para el juego, en
+          él podemos apreciar ilustraciones que hacen referencia a su impresionante castillo.
+          <br>
+        </p>
+      </div>
+    </section>
+    <!-- Section Historia -->
 
-      </main>
-    </div>
-  </div>
+  </main>
   <!-- Página principal -->
 
 
   <!-- Footer Bootstrap-->
-  <footer class="text-center body__footer mt-5">
+  <footer class="text-center body__footer">
     <!-- Grid container -->
     <div class="container-fluid pt-2">
 

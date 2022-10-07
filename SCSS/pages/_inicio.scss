@@ -1,0 +1,51 @@
+.main_index {
+  a {
+    text-decoration: none;
+  }
+
+  .main_index_sect_gold {
+    background-color: $gold;
+    color: $blue;
+
+    a {
+      color: $blue;
+    }
+
+    p {
+      color: $blue;
+    }
+  }
+
+  .main_index_sect_ed_20 {
+    background-color: $blue;
+    color: $gold;
+
+    a {
+      color: $gold;
+    }
+
+    img {
+      width: 80%;
+    }
+
+  }
+
+  h2 {
+    strong {
+      font-size: 4rem;
+    }
+  }
+}
+
+/*Article Historia*/
+
+.main__historia h3 {
+
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.25rem;
+  color: $gold-hell;
+}

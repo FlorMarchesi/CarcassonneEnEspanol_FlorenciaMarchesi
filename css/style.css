@@ -1,15 +1,6 @@
 @charset "UTF-8";
-/* Para importar la tipografía */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
 /* Paleta de Colores */
-:root {
-  /* SCSS */
-  --black: rgb(0, 8, 20);
-  --blue: rgb(0, 29, 61);
-  --blue-hell: rgb(1, 45, 91);
-  --gold: rgb(255, 214, 10);
-  --gold-hell: rgb(255, 232, 118); }
-
 /* Reseteo general */
 * {
   margin: 0;
@@ -17,13 +8,22 @@
   box-sizing: border-box;
   font-size: 18px; }
 
-/* Estilo para todas las páginas */
+/* Estilos compartidos de partes del sitio Web */
 /* Estilo del body */
 .body {
   font-family: Barlow, sans-serif;
-  background-color: var(--black);
+  background-color: #000814;
   width: 100vw;
   overflow-x: hidden; }
+
+/*Expansiones y Reglas */
+.estilo__img img {
+  width: 280px;
+  height: auto; }
+
+/* Estilo de los títulos */
+.estilo__h {
+  color: #ffd60a; }
 
 /* Header */
 .header {
@@ -55,13 +55,13 @@
 
 /* Nav */
 .nav {
-  background-color: var(--blue); }
+  background-color: #001d3d; }
 
 .nav__boton {
-  color: var(--gold); }
+  color: #ffd60a; }
 
 .nav a {
-  color: var(--gold);
+  color: #ffd60a;
   font-size: 1.1rem;
   padding: 3px 50px;
   display: block;
@@ -69,7 +69,7 @@
   text-align: center; }
 
 .nav a:visited {
-  color: var(--gold); }
+  color: #ffd60a; }
 
 .nav ul {
   list-style: none;
@@ -77,62 +77,132 @@
 
 /*El color cambia al pasar el mouse encima*/
 .nav a:hover {
-  color: var(--gold);
+  color: #ffd60a;
   font-weight: 600; }
 
 /* Footer */
 .body__footer {
-  background-color: var(--blue); }
-
-.body__footer a {
-  text-decoration: none;
-  color: var(--gold-hell);
-  font-size: 1rem; }
-
-.body__footer a:hover {
-  color: var(--gold); }
+  background-color: #001d3d; }
+  .body__footer a {
+    text-decoration: none;
+    color: #ffe876;
+    font-size: 1rem; }
+    .body__footer a:hover {
+      color: #ffd60a; }
 
 .footer__copyright {
-  background-color: var(--blue-hell);
-  color: var(--gold-hell); }
+  background-color: #012d5b;
+  color: #ffe876; }
 
-/*___________________________________________________*/
-/* Estilo para la página principal (index) */
-/* Edición 20 Aniversario */
-.ed__aniversario a {
+/*Estilo para cada página por separado */
+.main_index a {
   text-decoration: none; }
 
-/*img*/
-.ed__aniversario__img {
-  width: 500px; }
+.main_index .main_index_sect_gold {
+  background-color: #ffd60a;
+  color: #001d3d; }
+  .main_index .main_index_sect_gold a {
+    color: #001d3d; }
+  .main_index .main_index_sect_gold p {
+    color: #001d3d; }
 
-.container__ed__aniversario__h2 {
-  color: var(--gold);
-  font-weight: 700;
+.main_index .main_index_sect_ed_20 {
+  background-color: #001d3d;
+  color: #ffd60a; }
+  .main_index .main_index_sect_ed_20 a {
+    color: #ffd60a; }
+  .main_index .main_index_sect_ed_20 img {
+    width: 80%; }
+
+.main_index h2 strong {
   font-size: 4rem; }
 
 /*Article Historia*/
 .main__historia h3 {
-  color: var(--gold);
   font-weight: 700;
   font-size: 4rem; }
 
-.main__historia p {
+p {
   font-size: 1.25rem;
-  color: var(--gold-hell); }
+  color: #ffe876; }
 
-/*___________________________________________________________________*/
-/*Expansiones y Reglas */
-.estilo__img img {
-  width: 280px;
-  height: auto; }
+/* Submenú */
+figure.effect-zoe figcaption {
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 3.75em;
+  background: #fff;
+  color: #3c4a50;
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0); }
 
-.estilo__h {
-  color: var(--gold); }
+figure.effect-zoe h2 {
+  float: left; }
+
+figure.effect-zoe p.icon-links a {
+  float: right;
+  color: #3c4a50;
+  font-size: 1.4em; }
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+  color: #252d31; }
+
+figure.effect-zoe p.description {
+  position: absolute;
+  bottom: 8em;
+  padding: 2em;
+  color: #fff;
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  transition: opacity 0.35s; }
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+  transition: transform 0.35s;
+  transform: translate3d(0, 200%, 0); }
+
+figure.effect-zoe p.icon-links a span::before {
+  display: inline-block;
+  padding: 8px 10px; }
+
+.icon-eye::before {
+  content: '\e000'; }
+
+.icon-paper-clip::before {
+  content: '\e001'; }
+
+.icon-heart::before {
+  content: '\e024'; }
+
+figure.effect-zoe h2 {
+  display: inline-block; }
+
+figure.effect-zoe:hover p.description {
+  opacity: 1; }
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-zoe:hover h2 {
+  transition-delay: 0.05s; }
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+  transition-delay: 0.1s; }
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+  transition-delay: 0.15s; }
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+  transition-delay: 0.2s; }
 
 /* Expansiones */
 .hover {
-  background-color: var(--blue);
+  background-color: #001d3d;
   border-radius: 20px;
   position: absolute;
   visibility: hidden;
@@ -142,20 +212,14 @@
   font-weight: 700; }
 
 .hover p {
-  color: var(--gold-hell);
+  color: #ffe876;
   font-weight: 700; }
 
 .expansiones__main article {
-  background-color: var(--blue);
+  background-color: #001d3d;
   border-radius: 20px; }
 
-/*Todavía no funciona */
-/*.exp__1 img:hover  .hover__1{
-  visibility: visible;
-  top: 100px;
-}*/
-/*__________________________________________________________________*/
-/*Reglas*/
+/* Submenú */
 /* Tamaño imágenes*/
 .reglas__main__juego_base img {
   width: 300px;
@@ -170,7 +234,7 @@
   height: auto; }
 
 .reglas__main article {
-  background-color: var(--blue);
+  background-color: #001d3d;
   border-radius: 20px; }
 
 .reglas__main a {
@@ -185,40 +249,32 @@
   width: 260px;
   height: auto; }
 
-/*__________________________________________________________*/
 /*Acerca de*/
 .acerca_de__body {
-  background-color: var(--black); }
+  background-color: #000814;
+  text-align: justify; }
+  .acerca_de__body .acerca_de__main {
+    color: #ffe876; }
+    .acerca_de__body .acerca_de__main section {
+      background-color: #000814; }
+    .acerca_de__body .acerca_de__main h2 {
+      text-align: center;
+      color: #ffd60a;
+      font-size: 3rem;
+      font-weight: 700; }
 
-.acerca_de__main {
-  color: var(--gold-hell); }
-
-.acerca_de__main h2 {
-  font-size: 3rem;
-  color: var(--gold);
-  font-weight: 700; }
-
-.acerca_de__main section {
-  background-color: var(--black); }
-
-.acerca_de__main article {
-  background-color: var(--blue);
-  border-radius: 20px; }
-
-/*__________________________________________________________________________________*/
-/* Contacto */
 .contacto__main {
   display: flex;
   justify-content: center; }
 
 .contacto__main h2 {
-  color: var(--gold);
+  color: #ffd60a;
   font-weight: 700;
   display: block;
   text-align: center; }
 
 .contacto__main__section {
-  background-color: var(--blue);
+  background-color: #001d3d;
   padding: 20px;
   border-radius: 10px; }
 
@@ -226,16 +282,15 @@
   width: 200px;
   padding: 10px 5px;
   margin-top: 50px;
-  background-color: var(--gold-hell);
-  color: var(--blue);
+  background-color: #ffe876;
+  color: #001d3d;
   font-weight: 700;
   border-radius: 10px; }
 
 .contacto__main__enviar button:hover {
-  background-color: var(--blue-hell);
-  color: var(--gold); }
+  background-color: #012d5b;
+  color: #ffd60a; }
 
-/* _____________________________________________________________*/
 /* Media Queries */
 /* Mobil */
 @media (max-width: 767px) {
@@ -250,10 +305,10 @@
     padding: 0 10%; }
   /* Index */
   /*Ed. 20 Aniversario */
-  .ed__aniversario__div {
+  .main_index_sect_ed_20 {
     display: flex;
     flex-direction: column-reverse; }
-  .ed__aniversario__div h2 {
+  .main_index_sect_ed_20 h2 {
     font-size: 3rem;
     text-align: center; }
   /* Historia*/
@@ -266,20 +321,19 @@
     visibility: hidden; }
   /* Reglas */ }
 
-/* Mobil */
 /* Tablet */
-/*
-    @media (min-width: 768px) and (max-width:1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Ed. 20 Aniversario*/
+  .main_index_sect_ed_20 {
+    display: flex;
+    flex-direction: column-reverse; }
+  .main_index_sect_ed_20 h2 {
+    font-size: 3rem;
+    text-align: center; }
+  /* Tablet*/
+  /* Escritorio */ }
 
-      /Ed. 20 Aniversario/
-      .ed__aniversario__div {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-    }*/
-/* Tablet*/
-/* Escritorio */
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
   .body {
     width: 100vw;
     overflow-x: hidden; }

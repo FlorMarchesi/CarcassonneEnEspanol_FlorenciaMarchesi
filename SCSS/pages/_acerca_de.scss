@@ -1,0 +1,23 @@
+/*Acerca de*/
+.acerca_de__body {
+  background-color: $black;
+  text-align: justify;
+
+  .acerca_de__main {
+    color: $gold-hell;
+
+    section {
+      background-color: $black;
+    }
+
+    h2 {
+      text-align: center;
+      color: $gold;
+
+      font: {
+        size: 3rem;
+        weight: 700;
+      }
+    }
+  }
+}

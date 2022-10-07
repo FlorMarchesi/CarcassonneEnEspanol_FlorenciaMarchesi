@@ -1,0 +1,32 @@
+/* Nav */
+.nav {
+  background-color: $blue;
+}
+
+.nav__boton {
+  color: $gold;
+}
+
+.nav a {
+  color: $gold;
+  font-size: 1.1rem;
+  padding: 3px 50px;
+  display: block;
+  width: 300px;
+  text-align: center;
+}
+
+.nav a:visited {
+  color: $gold;
+}
+
+.nav ul {
+  list-style: none;
+  /*Quitamos el estilo a las listas*/
+}
+
+/*El color cambia al pasar el mouse encima*/
+.nav a:hover {
+  color: $gold;
+  font-weight: 600;
+}

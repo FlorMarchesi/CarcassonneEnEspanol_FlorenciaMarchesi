@@ -1,0 +1,17 @@
+/* Footer */
+.body__footer {
+  background-color: $blue;
+  a {
+      text-decoration: none;
+      color: $gold-hell;
+      font-size: 1rem;
+      &:hover {
+          color: $gold;
+        }
+    }
+}
+
+.footer__copyright {
+  background-color: $blue-hell;
+  color: $gold-hell;
+}
