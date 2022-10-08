@@ -37,9 +37,10 @@
       <div class="container-fluid nav__div">
 
         <!-- Botón de menú hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler nav__boton" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class=""><i class="fa-solid fa-bars"></i></span>
         </button>
         <!-- Botón de menú hamburguesa -->
 
@@ -54,7 +55,7 @@
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Expansiones
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="../../pages/expansiones/expansiones_expansiones.html">Expansiones</a>
                 </li>
                 <li><a class="dropdown-item" href="#">Spin-Off</a></li>
@@ -80,75 +81,291 @@
   </div>
   <!-- Menú navegable con Bootstrap -->
 
-  <main class="estilo__img">
-    <div>
-      <h4 class="estilo__h">Casadores y Recolectores</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/CasadoresYRecolectores.png"
-          alt="Spin-Off Casadores y Recolectores"></a>
-      <p>En el spin-off de cazadores y recolectores, al estilo clásico de Carcassonne, te transportan a un mundo casi
-        olvidado en
-        el que los cazadores y recolectores se encuentran entre ríos, mamuts y tigres dientes de sable.</p>
 
-      <h4 class="estilo__h">Edición Invierno</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/EdicionInvierno.png" alt="Spin-Off Edición Invierno"></a>
-      <p>Es básicamente un juego base normal de Carcassonne, excepto que todo tiene una atmósfera invernal. También hay
-        12 fichas
-        adicionales incluidas. Si bien es probable que "de alguna manera" sea posible, no se recomienda combinar la
-        edición de
-        invierno con otras ediciones.</p>
+  <main class="estilo__img main_expansiones container row justify-content-center">
+    <h2 class="estilo__h border-bottom text-start py-2">Spin Off</h2>
 
-      <h4 class="estilo__h">Safari</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/Safari.png" alt="Spin-Off Safari"></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni asperiores nam maxime in, debitis vel
-        dignissimos culpa, tenetur expedita itaque porro. Facilis impedit obcaecati distinctio odit, hic nisi dolorum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ullam quae voluptatem temporibus
-        enim, doloremque saepe sint beatae eos molestiae, animi commodi cupiditate cum ipsam fuga sit vel in.</p>
+    <!-- Niebla sobre Carcassonne -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/NieblaSobreCarcassonne.png"
+        alt="Niebla sobre Carcassonne" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Niebla sobre Carcassonne</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">35 min</p>
+          </div>
+        </div>
+        <p class="description">El primer juego cooperativo de Carcassonne. Una densa niebla se arrastra sobre los campos
+          y se traga todo Carcassonne. Para restaurar la paz en Carcassonne, debéis trabajar juntos para apaciguar a los
+          espíritus inquietos.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Niebla sobre Carcassonne -->
 
-      <h4 class="estilo__h">Amazonas</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/Amazonas.png" alt="Spin-Off Amazonas"></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni asperiores nam maxime in, debitis vel
-        dignissimos culpa, tenetur expedita itaque porro. Facilis impedit obcaecati distinctio odit, hic nisi dolorum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ullam quae voluptatem temporibus
-        enim, doloremque saepe sint beatae eos molestiae, animi commodi cupiditate cum ipsam fuga sit vel in.</p>
+    <!-- Edición Invierno -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/EdicionInvierno.png"
+        alt="Edición Invierno" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Edición Invierno</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Es básicamente un juego base normal de Carcassonne, excepto que todo tiene una atmósfera
+          invernal. Si bien es probable que "de alguna manera" sea posible, no se recomienda combinar la edición de
+          invierno con otras ediciones.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Edición Invierno -->
 
-      <h4 class="estilo__h">Junior</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/Junior.png" alt="Spin-Off Junior"></a>
-      <p>Es la versión infantil del multi premiado Carcassonne. En este juego simplificado de Carcassonne, el ganador
-        será el
-        primer jugador en colocar todas sus fichas en el tablero. Toda la familia puede disfrutar del reto, desde los 4
-        años.</p>
+    <!-- Casadores y Recolectores -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/CazadoresYRecolectores.png"
+        alt="Casadores y Recolectores" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Casadores y Recolectores</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Carcassonne está poblada por cazadores y recolectores, por ciervos, mamuts y tigres
+          dientes de sable. Se construyen cabañas, los
+          ríos serpentean a través del paisaje y las cartas adicionales son particularmente populares.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Casadores y Recolectores -->
 
-      <h4 class="estilo__h">Las Minas de Oro</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/Goldrusch.png" alt="Spin-Off Las Minas de Oro"></a>
-      <p>Envía a los jugadores al Salvaje Oeste. No solo hay indios que están particularmente interesados ​​en los
-        caballos
-        salvajes, sino que pronto se descubren las primeras minas de oro y comienza la fiebre del oro con una gran
-        competencia.</p>
+    <!-- La Fiebre del Oro -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/Goldrush.png"
+        alt="La Fiebre del Oro" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>La Fiebre del Oro</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Los ferrocarriles que te lleva a pequeños campamentos que rápidamente se convertirán en
+          ciudades. El comercio con los nativos americanos es muy próspero, ya que descubren las primeras minas de oro y
+          comienza la fiebre del oro con una gran competencia.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- La Fiebre del Oro -->
 
-      <h4 class="estilo__h">Mares del Sur</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/MaresDelSur_front.png" alt="Spin-Off Mares del Sur"></a>
-      <p>En el juego independiente Carcassonne - South Seas, los jugadores caminan sobre un lago que consta de muchas
-        islas
-        individuales. En lugar de puntos de recogida directamente, aquí se recogen mercancías, con las que los barcos
-        mercantes
-        deben ser abastecidos de la mejor manera posible.</p>
+    <!-- Amazonas -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/Amazonas.png"
+        alt="Amazonas" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Amazonas</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Ingrese a la selva amazónica donde deambulan loros, tucanes y otros animales. Todos
+          quieren visitar los pueblos, ubicar mejor sus campamentos y ser los más rápidos en el Amazonas.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Amazonas -->
 
-      <h4 class="estilo__h">Star Wars</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/StarWars.png" alt="Spin-Off Star Wars"></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni asperiores nam maxime in, debitis vel
-        dignissimos culpa, tenetur expedita itaque porro. Facilis impedit obcaecati distinctio odit, hic nisi dolorum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ullam quae voluptatem temporibus
-        enim, doloremque saepe sint beatae eos molestiae, animi commodi cupiditate cum ipsam fuga sit vel in.</p>
+    <!-- Safari -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/Safari.png" alt="Safari" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Safari</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Te adentrarás en las estepas de África. Los monos se balancean en la selva, los leones
+          descansan a la sombra de los árboles, los pesados ​​pasos de los elefantes sacuden el terreno. También hay
+          jirafas y cebras en los pozos de agua, por lo que siempre vale la pena esperar allí.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Safari -->
 
-      <h4 class="estilo__h">Sobre Colinas y Valles</h4>
-      <a href=""><img src="../../images/expansiones/spin_off/SobreColinasYValles.png"
-          alt="Spin-Off Sobre Colinas y Valles"></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni asperiores nam maxime in, debitis vel
-        dignissimos culpa, tenetur expedita itaque porro. Facilis impedit obcaecati distinctio odit, hic nisi dolorum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ullam quae voluptatem temporibus
-        enim, doloremque saepe sint beatae eos molestiae, animi commodi cupiditate cum ipsam fuga sit vel in.</p>
-    </div>
+    <!-- Mares del Sur -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/MaresDelSur.png"
+        alt="Mares del Sur" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Mares del Sur</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">En vez de las ciudades, carreteras y granjas, los jugadores utilizan sus fichas para
+          recolectar bananas, conchas y peces y luego embarcarlos en intercambio por puntos.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Mares del Sur -->
+
+    <!-- Sobre Colinas y Valles -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/SobreColinasYValles.png"
+        alt="Sobre Colinas y Valles" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Sobre Colinas y Valles</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Esta variante de Carcassonne es un divertido juego rural en el que no se descuida la
+          táctica. Aquellos que cosechan las
+          mejores cosechas, caminan diligentemente y mantienen la mayor cantidad de animales tienen la mejor oportunidad
+          de ganar.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Sobre Colinas y Valles -->
+
+    <!-- Junior -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/Junior.png" alt="Junior" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Junior</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 4</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">4+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Después de celebrar el día festivo nacional de su ciudad, los niños de Carcassonne deben
+          traer a sus animales de vuelta a casa. El ganador será el
+          primer jugador en colocar todas sus fichas en el tablero. Toda la familia puede disfrutar del reto, desde los
+          4 años.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Junior -->
+
+    <!-- Star Wars -->
+    <figure class="col-sm-12 col-md-6 col-xl-4 main_expansiones__portadas m-5">
+      <img class="main_expansiones__portadas__img_" src="../../images/expansiones/spin_off/StarWars.png"
+        alt="Star Wars" />
+      <figcaption class="main_expansiones__portadas__emergente">
+        <h2>Star Wars</h2>
+        <div class="main_expansiones__portadas__emergente__div_iconos">
+          <div class="mx-1">
+            <img src="../../images/expansiones/jugadores.svg" alt="Jugadores">
+            <p class="p-1">2 - 5</p>
+          </div class="mx-1">
+          <div>
+            <img src="../../images/expansiones/edad.svg" alt="Edad">
+            <p class="p-1">8+</p>
+          </div>
+          <div class="mx-1">
+            <img src="../../images/expansiones/tiempo.svg" alt="Tiempo de juego">
+            <p class="p-1">30 min</p>
+          </div>
+        </div>
+        <p class="description">Esta versión combina las emocionantes aventuras del universo de Star Wars con la
+          jugabilidad de Carcassonne , con las reglas
+          conocidas del juego simplificadas a través de cambios inteligentes que aportan una sensación completamente
+          nueva al
+          juego.
+        </p>
+      </figcaption>
+    </figure>
+    <!-- Star Wars -->
   </main>
+
 
   <!-- Footer Bootstrap-->
   <footer class="text-center body__footer mt-5">

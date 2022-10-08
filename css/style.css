@@ -56,29 +56,24 @@
 /* Nav */
 .nav {
   background-color: #001d3d; }
-
-.nav__boton {
-  color: #ffd60a; }
-
-.nav a {
-  color: #ffd60a;
-  font-size: 1.1rem;
-  padding: 3px 50px;
-  display: block;
-  width: 300px;
-  text-align: center; }
-
-.nav a:visited {
-  color: #ffd60a; }
-
-.nav ul {
-  list-style: none;
-  /*Quitamos el estilo a las listas*/ }
-
-/*El color cambia al pasar el mouse encima*/
-.nav a:hover {
-  color: #ffd60a;
-  font-weight: 600; }
+  .nav .nav__boton {
+    color: #ffd60a; }
+  .nav ul {
+    list-style: none;
+    /*Quitamos el estilo a las listas*/ }
+  .nav a {
+    color: #ffd60a;
+    font-size: 1.1rem;
+    padding: 3px 50px;
+    display: block;
+    width: 1fr;
+    text-align: center; }
+    .nav a:visited {
+      color: #ffd60a; }
+    .nav a:hover {
+      /*El color cambia al pasar el mouse encima*/
+      color: #ffd60a;
+      border-bottom: 1px solid #ffd60a; }
 
 /* Footer */
 .body__footer {
@@ -127,6 +122,10 @@ p {
   color: #ffe876; }
 
 /* Submenú */
+/* Estos estilos se repiten en las páginas:
+      - Expansiones
+      - Mini Expansiones
+      - Spin - off */
 .main_expansiones {
   position: relative;
   margin: 0 auto;
@@ -145,7 +144,7 @@ p {
     cursor: pointer;
     /* Emergente */
     /* Emergente */ }
-    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__img {
+    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__img_ {
       opacity: 0.2; }
     .main_expansiones .main_expansiones__portadas:hover .description {
       opacity: 1; }
@@ -155,7 +154,7 @@ p {
       transform: translate3d(0, 0, 0); }
     .main_expansiones .main_expansiones__portadas:hover h2 {
       transition-delay: 0.05s; }
-    .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__img {
+    .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__img_ {
       height: 440px;
       width: 300px; }
     .main_expansiones .main_expansiones__portadas h2 {
@@ -201,7 +200,7 @@ p {
     opacity: 0;
     transition: opacity 0.5s; }
 
-/* Common style */
+/* Estilo comunes */
 .main_expansiones figure .main_expansiones__portadas__emergente,
 .main_expansiones figure .main_expansiones__portadas__emergente > div {
   position: absolute;
@@ -210,54 +209,20 @@ p {
   width: 100%;
   height: 100%; }
 
-/* Expansiones */
-.hover {
-  background-color: #001d3d;
-  border-radius: 20px;
-  position: absolute;
-  visibility: hidden;
-  opacity: 0.5; }
+/* Utiliza los mismos estilos que la página "Expansiones", solo con la modificación del tamaño de las imágenes */
+.main_expansiones .main_expansiones__portadas .main_expansiones__portadas__img {
+  height: 300px;
+  width: 300px; }
 
-.hover h5 {
-  font-weight: 700; }
-
-.hover p {
-  color: #ffe876;
-  font-weight: 700; }
-
-.expansiones__main article {
-  background-color: #001d3d;
-  border-radius: 20px; }
+.main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__img {
+  opacity: 0.2; }
 
 /* Submenú */
 /* Tamaño imágenes*/
-.reglas__main__juego_base img {
-  width: 300px;
-  height: auto; }
-
-#nueva__edicion {
-  width: 350px;
-  height: auto; }
-
-#circo {
-  width: 380px;
-  height: auto; }
-
-.reglas__main article {
-  background-color: #001d3d;
-  border-radius: 20px; }
-
-.reglas__main a {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.reglas__main h3 {
-  font-size: 1.5rem; }
-
-#star_wars {
-  width: 260px;
-  height: auto; }
+.main_reglas .img__claro {
+  opacity: 0.7; }
+  .main_reglas .img__claro:hover {
+    opacity: 1; }
 
 /*Acerca de*/
 .acerca_de__body {
@@ -273,33 +238,24 @@ p {
       font-size: 3rem;
       font-weight: 700; }
 
-.contacto__main {
-  display: flex;
-  justify-content: center; }
-
-.contacto__main h2 {
-  color: #ffd60a;
-  font-weight: 700;
-  display: block;
-  text-align: center; }
-
-.contacto__main__section {
+.main_contacto .main_contacto__section {
   background-color: #001d3d;
   padding: 20px;
   border-radius: 10px; }
-
-.contacto__main__enviar button {
-  width: 200px;
-  padding: 10px 5px;
-  margin-top: 50px;
-  background-color: #ffe876;
-  color: #001d3d;
-  font-weight: 700;
-  border-radius: 10px; }
-
-.contacto__main__enviar button:hover {
-  background-color: #012d5b;
-  color: #ffd60a; }
+  .main_contacto .main_contacto__section input, .main_contacto .main_contacto__section textarea {
+    background-color: #012d5b;
+    border: 1px solid #ffe876; }
+  .main_contacto .main_contacto__section .main_contacto__enviar button {
+    width: 200px;
+    padding: 10px 5px;
+    margin-top: 50px;
+    background-color: #ffe876;
+    color: #001d3d;
+    font-weight: 700;
+    border-radius: 10px; }
+    .main_contacto .main_contacto__section .main_contacto__enviar button:hover {
+      background-color: #012d5b;
+      color: #ffd60a; }
 
 /* Media Queries */
 /* Mobil */
@@ -340,6 +296,10 @@ p {
   .main_index_sect_ed_20 h2 {
     font-size: 3rem;
     text-align: center; }
+  /* Reglas */
+  .reglas__ocultar {
+    position: absolute;
+    visibility: hidden; }
   /* Tablet*/
   /* Escritorio */ }
 
@@ -351,5 +311,5 @@ p {
     opacity: 0.8; }
   .img__claro {
     opacity: 0.7; }
-  .img__claro:hover {
-    opacity: 1.0; } }
+    .img__claro:hover {
+      opacity: 1.0; } }

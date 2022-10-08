@@ -52,7 +52,7 @@
 @media (min-width: 768px) and (max-width:1023px) {
 
   /*Ed. 20 Aniversario*/
-.main_index_sect_ed_20 {
+  .main_index_sect_ed_20 {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -62,26 +62,34 @@
     text-align: center;
   }
 
-/* Tablet*/
+  /* Reglas */
 
-
-/* Escritorio */
-@media (min-width: 1024px) {
-  .body {
-    width: 100vw;
-    overflow-x: hidden;
+  .reglas__ocultar {
+    position: absolute;
+    visibility: hidden;
   }
 
-  .img__oscuro:hover {
-    opacity: 0.8;
-  }
+  /* Tablet*/
 
-  .img__claro {
-    opacity: 0.7;
-  }
 
-  .img__claro:hover {
-    opacity: 1.0;
+  /* Escritorio */
+  @media (min-width: 1024px) {
+    .body {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+
+    .img__oscuro:hover {
+      opacity: 0.8;
+    }
+
+    .img__claro {
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1.0;
+
+      }
+    }
   }
-}
 }

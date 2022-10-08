@@ -1,0 +1,17 @@
+/* Utiliza los mismos estilos que la página "Expansiones", solo con la modificación del tamaño de las imágenes */
+
+.main_expansiones {
+  .main_expansiones__portadas {
+
+    .main_expansiones__portadas__img {
+      height: 300px;
+      width: 300px;
+    }
+
+    &:hover {
+      .main_expansiones__portadas__img {
+        opacity: 0.2;
+      }
+    }
+  }
+}

@@ -1,3 +1,8 @@
+/* Estos estilos se repiten en las páginas:
+      - Expansiones
+      - Mini Expansiones
+      - Spin - off */
+
 .main_expansiones {
   position: relative;
   margin: 0 auto;
@@ -15,7 +20,7 @@
     cursor: pointer;
 
     &:hover {
-      .main_expansiones__portadas__img {
+      .main_expansiones__portadas__img_ {
         opacity: 0.2;
       }
 
@@ -34,10 +39,10 @@
       }
     }
 
-        .main_expansiones__portadas__img{
-          height: 440px;
-          width: 300px;
-        }
+    .main_expansiones__portadas__img_ {
+      height: 440px;
+      width: 300px;
+    }
 
     h2 {
       word-spacing: -0.15em;
@@ -106,7 +111,7 @@
 }
 
 
-/* Common style */
+/* Estilo comunes */
 .main_expansiones figure .main_expansiones__portadas__emergente,
 .main_expansiones figure .main_expansiones__portadas__emergente>div {
   position: absolute;
@@ -114,32 +119,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-
-
-
-
-
-/* Expansiones */
-.hover {
-  background-color: $blue;
-  border-radius: 20px;
-  position: absolute;
-  visibility: hidden;
-  opacity: 0.5;
-}
-
-.hover h5 {
-  font-weight: 700;
-}
-
-.hover p {
-  color: $gold-hell;
-  font-weight: 700;
-}
-
-.expansiones__main article {
-  background-color: $blue;
-  border-radius: 20px;
 }

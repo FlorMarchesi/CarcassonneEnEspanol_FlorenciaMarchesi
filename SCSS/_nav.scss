@@ -1,32 +1,32 @@
 /* Nav */
 .nav {
   background-color: $blue;
-}
 
-.nav__boton {
-  color: $gold;
-}
+  .nav__boton {
+    color: $gold;
+  }
 
-.nav a {
-  color: $gold;
-  font-size: 1.1rem;
-  padding: 3px 50px;
-  display: block;
-  width: 300px;
-  text-align: center;
-}
+  ul {
+    list-style: none;
+    /*Quitamos el estilo a las listas*/
+  }
 
-.nav a:visited {
-  color: $gold;
-}
+  a {
+    color: $gold;
+    font-size: 1.1rem;
+    padding: 3px 50px;
+    display: block;
+    width: 1fr;
+    text-align: center;
 
-.nav ul {
-  list-style: none;
-  /*Quitamos el estilo a las listas*/
-}
+    &:visited {
+      color: $gold;
+    }
 
-/*El color cambia al pasar el mouse encima*/
-.nav a:hover {
-  color: $gold;
-  font-weight: 600;
+    &:hover {
+      /*El color cambia al pasar el mouse encima*/
+      color: $gold;
+      border-bottom: 1px solid $gold;
+    }
+  }
 }

@@ -37,10 +37,10 @@
       <div class="container-fluid nav__div">
 
         <!-- Botón de menú hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler nav__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""><i class="fa-solid fa-bars"></i></span>
+                </button>
         <!-- Botón de menú hamburguesa -->
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -79,21 +79,22 @@
   </div>
   <!-- Menú navegable con Bootstrap -->
 
-  <!--main que contiene el formulario de contacto-->
-  <main class="contacto__main row">
-    <h2 class="row mb-5">Contacto</h2>
-    <section class="contacto__main__section col-3">
+  <!-- Main que contiene el formulario de contacto -->
+  <main class="main_contacto container justify-content-center">
+    <h2 class="estilo__h border-bottom text-start py-2">Contacto</h2>
+    <section class="main_contacto__section container mt-5">
       <div class="mb-3 ">
         <label for="exampleFormControlInput1" class="form-label"></label>
-        <input type="email" class="form-control bg-dark text-yellow" id="exampleFormControlInput1"
+        <input type="email" class="form-control  text-yellow" id="exampleFormControlInput1"
           placeholder="nombre@ejemplo.com" required>
       </div>
       <div class="mb-3 ">
         <label for="exampleFormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control bg-dark text-yellow" id="exampleFormControlTextarea1" rows="7"
+        <textarea class="form-control text-yellow" id="exampleFormControlTextarea1" rows="7"
           placeholder="Ingrese un comentario y/o sugerencia" required></textarea>
       </div>
-      <div class="contacto__main__enviar d-flex justify-content-center"><button>Enviar</button></div>
+      <div class="main_contacto__enviar d-flex justify-content-center"><button>Enviar</button>
+      </div>
     </section>
   </main>
 
