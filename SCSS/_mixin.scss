@@ -1,0 +1,58 @@
+/* Enlaces sin decoración */
+@mixin a-no {
+  text-decoration: none;
+}
+
+/* nav */
+@mixin nav-a {
+  &:visited {
+    color: $gold;
+  }
+
+  &:hover {
+    /*El color cambia al pasar el mouse encima*/
+    color: $gold;
+    border-bottom: 1px solid $gold;
+  }
+}
+
+
+/* Index */
+@mixin bg-gold {
+  background-color: $gold;
+  color: $blue;
+
+  a {
+    color: $blue;
+  }
+
+  p {
+    color: $blue;
+    font-size: 1.25rem;
+  }
+}
+
+/* Contacto */
+@mixin form {
+  background-color: $blue-hell;
+  border: 1px solid $gold-hell;
+}
+
+/* Expansiones */
+
+@mixin posicion-alineamiento {
+  position: relative;
+  text-align: center;
+}
+
+@mixin transform {
+  transform: translate3d(0, 0, 0);
+}
+
+@mixin posicion-tamano {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

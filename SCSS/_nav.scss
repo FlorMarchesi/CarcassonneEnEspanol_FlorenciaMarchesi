@@ -18,15 +18,6 @@
     display: block;
     width: 1fr;
     text-align: center;
-
-    &:visited {
-      color: $gold;
-    }
-
-    &:hover {
-      /*El color cambia al pasar el mouse encima*/
-      color: $gold;
-      border-bottom: 1px solid $gold;
-    }
+    @include nav-a;
   }
 }

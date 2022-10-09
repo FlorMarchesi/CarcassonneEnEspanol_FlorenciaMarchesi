@@ -1,19 +1,10 @@
 .main_index {
   a {
-    text-decoration: none;
+    @include a-no;
   }
 
   .main_index_sect_gold {
-    background-color: $gold;
-    color: $blue;
-
-    a {
-      color: $blue;
-    }
-
-    p {
-      color: $blue;
-    }
+    @include bg-gold;
   }
 
   .main_index_sect_ed_20 {
@@ -32,20 +23,7 @@
 
   h2 {
     strong {
-      font-size: 4rem;
+      font-size: 2em;
     }
   }
-}
-
-/*Article Historia*/
-
-.main__historia h3 {
-
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-p {
-  font-size: 1.25rem;
-  color: $gold-hell;
 }

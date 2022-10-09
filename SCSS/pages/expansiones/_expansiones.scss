@@ -4,20 +4,18 @@
       - Spin - off */
 
 .main_expansiones {
-  position: relative;
   margin: 0 auto;
   padding: 1em 0 4em;
   list-style: none;
-  text-align: center;
+  @include posicion-alineamiento;
 
   .main_expansiones__portadas {
-    position: relative;
     float: left;
     overflow: hidden;
     margin: 10px 1%;
     width: 320px;
-    text-align: center;
     cursor: pointer;
+    @include posicion-alineamiento;
 
     &:hover {
       .main_expansiones__portadas__img_ {
@@ -28,14 +26,19 @@
         opacity: 1;
       }
 
-      .main_expansiones__portadas__emergente,
-      h2,
-      .main_expansiones__portadas__emergente__div_iconos img {
-        transform: translate3d(0, 0, 0);
+      .main_expansiones__portadas__emergente {
+        @include transform;
       }
 
       h2 {
+        @include transform;
         transition-delay: 0.05s;
+      }
+
+      .main_expansiones__portadas__emergente__div_iconos {
+        img {
+          @include transform;
+        }
       }
     }
 
@@ -77,7 +80,6 @@
         width: 100%;
         margin-top: 13%;
 
-
         div {
           display: inline-block;
 
@@ -111,7 +113,8 @@
 }
 
 
-/* Estilo comunes */
+/* Estilo comunes*/
+
 .main_expansiones figure .main_expansiones__portadas__emergente,
 .main_expansiones figure .main_expansiones__portadas__emergente>div {
   position: absolute;

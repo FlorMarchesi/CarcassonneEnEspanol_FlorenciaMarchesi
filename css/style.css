@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
-/* Paleta de Colores */
+/* Paleta de Colores*/
+/* Enlaces sin decoración */
+/* nav */
+/* Index */
+/* Contacto */
+/* Expansiones */
 /* Reseteo general */
 * {
   margin: 0;
@@ -12,9 +17,9 @@
 /* Estilo del body */
 .body {
   font-family: Barlow, sans-serif;
-  background-color: #000814;
   width: 100vw;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #000814; }
 
 /*Expansiones y Reglas */
 .estilo__img img {
@@ -34,15 +39,15 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/header/juego-mesa-carcassonne.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-
-.header__img {
-  width: 80px;
-  margin: 0 20px; }
+  .header .header__div__img .header__img {
+    width: 80px;
+    margin: 0 20px; }
+  .header .header__div__img:hover {
+    animation: rotacion 2.5s 1 linear; }
+  .header .header__img__2 {
+    width: 500px; }
 
 /* Animación para que el logo de vuelta */
-.header__div__img:hover {
-  animation: rotacion 2.5s 1 linear; }
-
 @keyframes rotacion {
   from {
     transform: rotate(0deg); }
@@ -50,9 +55,6 @@
     transform: rotate(359deg); } }
 
 /* Animación para que el logo de vuelta */
-.header__img__2 {
-  width: 500px; }
-
 /* Nav */
 .nav {
   background-color: #001d3d; }
@@ -84,10 +86,9 @@
     font-size: 1rem; }
     .body__footer a:hover {
       color: #ffd60a; }
-
-.footer__copyright {
-  background-color: #012d5b;
-  color: #ffe876; }
+  .body__footer .footer__copyright {
+    background-color: #012d5b;
+    color: #ffe876; }
 
 /*Estilo para cada página por separado */
 .main_index a {
@@ -99,7 +100,8 @@
   .main_index .main_index_sect_gold a {
     color: #001d3d; }
   .main_index .main_index_sect_gold p {
-    color: #001d3d; }
+    color: #001d3d;
+    font-size: 1.25rem; }
 
 .main_index .main_index_sect_ed_20 {
   background-color: #001d3d;
@@ -110,16 +112,7 @@
     width: 80%; }
 
 .main_index h2 strong {
-  font-size: 4rem; }
-
-/*Article Historia*/
-.main__historia h3 {
-  font-weight: 700;
-  font-size: 4rem; }
-
-p {
-  font-size: 1.25rem;
-  color: #ffe876; }
+  font-size: 2em; }
 
 /* Submenú */
 /* Estos estilos se repiten en las páginas:
@@ -127,33 +120,34 @@ p {
       - Mini Expansiones
       - Spin - off */
 .main_expansiones {
-  position: relative;
   margin: 0 auto;
   padding: 1em 0 4em;
   list-style: none;
+  position: relative;
   text-align: center;
   /* Párrafo descriptivo */
   /* Párrafo descriptivo */ }
   .main_expansiones .main_expansiones__portadas {
-    position: relative;
     float: left;
     overflow: hidden;
     margin: 10px 1%;
     width: 320px;
-    text-align: center;
     cursor: pointer;
+    position: relative;
+    text-align: center;
     /* Emergente */
     /* Emergente */ }
     .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__img_ {
       opacity: 0.2; }
     .main_expansiones .main_expansiones__portadas:hover .description {
       opacity: 1; }
-    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__emergente,
-    .main_expansiones .main_expansiones__portadas:hover h2,
-    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__emergente__div_iconos img {
+    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__emergente {
       transform: translate3d(0, 0, 0); }
     .main_expansiones .main_expansiones__portadas:hover h2 {
+      transform: translate3d(0, 0, 0);
       transition-delay: 0.05s; }
+    .main_expansiones .main_expansiones__portadas:hover .main_expansiones__portadas__emergente__div_iconos img {
+      transform: translate3d(0, 0, 0); }
     .main_expansiones .main_expansiones__portadas .main_expansiones__portadas__img_ {
       height: 440px;
       width: 300px; }
@@ -200,7 +194,7 @@ p {
     opacity: 0;
     transition: opacity 0.5s; }
 
-/* Estilo comunes */
+/* Estilo comunes*/
 .main_expansiones figure .main_expansiones__portadas__emergente,
 .main_expansiones figure .main_expansiones__portadas__emergente > div {
   position: absolute;
@@ -242,7 +236,10 @@ p {
   background-color: #001d3d;
   padding: 20px;
   border-radius: 10px; }
-  .main_contacto .main_contacto__section input, .main_contacto .main_contacto__section textarea {
+  .main_contacto .main_contacto__section input {
+    background-color: #012d5b;
+    border: 1px solid #ffe876; }
+  .main_contacto .main_contacto__section textarea {
     background-color: #012d5b;
     border: 1px solid #ffe876; }
   .main_contacto .main_contacto__section .main_contacto__enviar button {
