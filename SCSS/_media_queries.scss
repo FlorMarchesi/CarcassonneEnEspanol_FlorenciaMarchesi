@@ -5,37 +5,27 @@
 @media (max-width: 767px) {
 
   /* Header */
-  .header__img__2 {
-    position: absolute;
-    visibility: hidden;
+  .header {
+    .header__div__img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header__img__2 {
+      position: absolute;
+      visibility: hidden;
+    }
   }
 
-  .header__div__img {
-    display: flex;
-    justify-content: center;
-  }
-
-  main {
-    padding: 0 10%;
-  }
 
   /* Index */
   /*Ed. 20 Aniversario */
-  .main_index_sect_ed_20 {
-    display: flex;
-    flex-direction: column-reverse;
+  .main_index {
+    .main_index_sect_ed_20 {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
-
-  .main_index_sect_ed_20 h2 {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  /* Historia*/
-  .main__historia h3 {
-    font-size: 3rem;
-  }
-
   /* Index */
 
   /* Reglas */
@@ -57,18 +47,11 @@
     flex-direction: column-reverse;
   }
 
-  .main_index_sect_ed_20 h2 {
-    font-size: 3rem;
-    text-align: center;
-  }
-
   /* Reglas */
-
   .reglas__ocultar {
     position: absolute;
     visibility: hidden;
   }
-
   /* Tablet*/
 
 
@@ -76,7 +59,6 @@
   @media (min-width: 1024px) {
     .body {
       width: 100vw;
-      overflow-x: hidden;
     }
 
     .img__oscuro:hover {

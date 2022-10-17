@@ -3,6 +3,10 @@
     @include a-no;
   }
 
+  strong {
+    font-size: 3rem;
+  }
+
   .main_index_sect_gold {
     @include bg-gold;
   }
@@ -11,19 +15,11 @@
     background-color: $blue;
     color: $gold;
 
-    a {
-      color: $gold;
-    }
-
     img {
-      width: 80%;
+      width: 400px;
+      height: auto;
     }
 
   }
 
-  h2 {
-    strong {
-      font-size: 2em;
-    }
-  }
 }

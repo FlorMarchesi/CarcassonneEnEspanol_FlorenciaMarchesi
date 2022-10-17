@@ -94,6 +94,9 @@
 .main_index a {
   text-decoration: none; }
 
+.main_index strong {
+  font-size: 3rem; }
+
 .main_index .main_index_sect_gold {
   background-color: #ffd60a;
   color: #001d3d; }
@@ -101,18 +104,14 @@
     color: #001d3d; }
   .main_index .main_index_sect_gold p {
     color: #001d3d;
-    font-size: 1.25rem; }
+    font-size: 1.25em; }
 
 .main_index .main_index_sect_ed_20 {
   background-color: #001d3d;
   color: #ffd60a; }
-  .main_index .main_index_sect_ed_20 a {
-    color: #ffd60a; }
   .main_index .main_index_sect_ed_20 img {
-    width: 80%; }
-
-.main_index h2 strong {
-  font-size: 2em; }
+    width: 400px;
+    height: auto; }
 
 /* Submenú */
 /* Estos estilos se repiten en las páginas:
@@ -128,6 +127,7 @@
   /* Párrafo descriptivo */
   /* Párrafo descriptivo */ }
   .main_expansiones .main_expansiones__portadas {
+    flex-wrap: wrap;
     float: left;
     overflow: hidden;
     margin: 10px 1%;
@@ -258,25 +258,17 @@
 /* Mobil */
 @media (max-width: 767px) {
   /* Header */
-  .header__img__2 {
-    position: absolute;
-    visibility: hidden; }
-  .header__div__img {
+  .header .header__div__img {
     display: flex;
     justify-content: center; }
-  main {
-    padding: 0 10%; }
+  .header .header__img__2 {
+    position: absolute;
+    visibility: hidden; }
   /* Index */
   /*Ed. 20 Aniversario */
-  .main_index_sect_ed_20 {
+  .main_index .main_index_sect_ed_20 {
     display: flex;
     flex-direction: column-reverse; }
-  .main_index_sect_ed_20 h2 {
-    font-size: 3rem;
-    text-align: center; }
-  /* Historia*/
-  .main__historia h3 {
-    font-size: 3rem; }
   /* Index */
   /* Reglas */
   .reglas__ocultar {
@@ -290,9 +282,6 @@
   .main_index_sect_ed_20 {
     display: flex;
     flex-direction: column-reverse; }
-  .main_index_sect_ed_20 h2 {
-    font-size: 3rem;
-    text-align: center; }
   /* Reglas */
   .reglas__ocultar {
     position: absolute;
@@ -302,8 +291,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
   .body {
-    width: 100vw;
-    overflow-x: hidden; }
+    width: 100vw; }
   .img__oscuro:hover {
     opacity: 0.8; }
   .img__claro {

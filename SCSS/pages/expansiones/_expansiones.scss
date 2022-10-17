@@ -10,6 +10,7 @@
   @include posicion-alineamiento;
 
   .main_expansiones__portadas {
+    flex-wrap: wrap;
     float: left;
     overflow: hidden;
     margin: 10px 1%;
