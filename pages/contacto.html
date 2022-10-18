@@ -82,7 +82,7 @@
   <!-- Main que contiene el formulario de contacto -->
   <main class="main_contacto container justify-content-center">
     <h2 class="estilo__h border-bottom text-start py-2">Contacto</h2>
-    <section class="main_contacto__section container mt-5">
+    <form class="main_contacto__section container mt-5">
       <div class="mb-3 ">
         <label for="exampleFormControlInput1" class="form-label"></label>
         <input type="email" class="form-control  text-yellow" id="exampleFormControlInput1"
@@ -93,9 +93,10 @@
         <textarea class="form-control text-yellow" id="exampleFormControlTextarea1" rows="7"
           placeholder="Ingrese un comentario y/o sugerencia" required></textarea>
       </div>
-      <div class="main_contacto__enviar d-flex justify-content-center"><button>Enviar</button>
+      <div class="main_contacto__enviar d-flex justify-content-center">
+        <button type="submit">Enviar</button>
       </div>
-    </section>
+    </form>
   </main>
 
   <!-- Footer Bootstrap-->
