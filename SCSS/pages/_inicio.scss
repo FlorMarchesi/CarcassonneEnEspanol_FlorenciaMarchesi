@@ -7,6 +7,11 @@
     font-size: 3rem;
   }
 
+  img {
+    width: 55%;
+    height: auto;
+  }
+
   .main_index_sect_gold {
     @include bg-gold;
   }
@@ -14,11 +19,6 @@
   .main_index_sect_ed_20 {
     background-color: $blue;
     color: $gold;
-
-    img {
-      width: 400px;
-      height: auto;
-    }
 
   }
 

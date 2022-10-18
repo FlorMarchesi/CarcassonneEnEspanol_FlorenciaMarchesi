@@ -4,6 +4,7 @@
 
 @media (max-width: 767px) {
 
+
   /* Header */
   .header {
     .header__div__img {
@@ -14,18 +15,21 @@
     .header__img__2 {
       position: absolute;
       visibility: hidden;
+      top: 0;
+      left: 0;
+      width: 50px;
     }
   }
 
 
   /* Index */
-  /*Ed. 20 Aniversario */
+  /*Ed. 20 Aniversario*/
   .main_index {
     .main_index_sect_ed_20 {
-      display: flex;
       flex-direction: column-reverse;
     }
   }
+
   /* Index */
 
   /* Reglas */
@@ -52,6 +56,7 @@
     position: absolute;
     visibility: hidden;
   }
+
   /* Tablet*/
 
 

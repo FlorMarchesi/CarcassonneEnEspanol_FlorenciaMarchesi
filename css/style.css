@@ -97,6 +97,10 @@
 .main_index strong {
   font-size: 3rem; }
 
+.main_index img {
+  width: 55%;
+  height: auto; }
+
 .main_index .main_index_sect_gold {
   background-color: #ffd60a;
   color: #001d3d; }
@@ -109,9 +113,6 @@
 .main_index .main_index_sect_ed_20 {
   background-color: #001d3d;
   color: #ffd60a; }
-  .main_index .main_index_sect_ed_20 img {
-    width: 400px;
-    height: auto; }
 
 /* Submenú */
 /* Estos estilos se repiten en las páginas:
@@ -238,10 +239,12 @@
   border-radius: 10px; }
   .main_contacto .main_contacto__section input {
     background-color: #012d5b;
-    border: 1px solid #ffe876; }
+    border: 1px solid #ffe876;
+    color: #ffe876; }
   .main_contacto .main_contacto__section textarea {
     background-color: #012d5b;
-    border: 1px solid #ffe876; }
+    border: 1px solid #ffe876;
+    color: #ffe876; }
   .main_contacto .main_contacto__section .main_contacto__enviar button {
     width: 200px;
     padding: 10px 5px;
@@ -263,11 +266,13 @@
     justify-content: center; }
   .header .header__img__2 {
     position: absolute;
-    visibility: hidden; }
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 50px; }
   /* Index */
-  /*Ed. 20 Aniversario */
+  /*Ed. 20 Aniversario*/
   .main_index .main_index_sect_ed_20 {
-    display: flex;
     flex-direction: column-reverse; }
   /* Index */
   /* Reglas */
