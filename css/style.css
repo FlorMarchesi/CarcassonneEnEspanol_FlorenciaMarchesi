@@ -240,11 +240,19 @@
   .main_contacto .main_contacto__section input {
     background-color: #012d5b;
     border: 1px solid #ffe876;
+<<<<<<< HEAD
     color: #ffe876; }
   .main_contacto .main_contacto__section textarea {
     background-color: #012d5b;
     border: 1px solid #ffe876;
     color: #ffe876; }
+=======
+    color: #ffd60a; }
+  .main_contacto .main_contacto__section textarea {
+    background-color: #012d5b;
+    border: 1px solid #ffe876;
+    color: #ffd60a; }
+>>>>>>> PreEntrega3_FlorenciaMarchesi
   .main_contacto .main_contacto__section .main_contacto__enviar button {
     width: 200px;
     padding: 10px 5px;
@@ -262,7 +270,6 @@
 @media (max-width: 767px) {
   /* Header */
   .header .header__div__img {
-    display: flex;
     justify-content: center; }
   .header .header__img__2 {
     position: absolute;
