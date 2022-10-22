@@ -97,10 +97,6 @@
 .main_index strong {
   font-size: 3rem; }
 
-.main_index img {
-  width: 55%;
-  height: auto; }
-
 .main_index .main_index_sect_gold {
   background-color: #ffd60a;
   color: #001d3d; }
@@ -244,12 +240,7 @@
   .main_contacto .main_contacto__section textarea {
     background-color: #012d5b;
     border: 1px solid #ffe876;
-    color: #ffe876;
-    color: #ffd60a; }
-  .main_contacto .main_contacto__section textarea {
-    background-color: #012d5b;
-    border: 1px solid #ffe876;
-    color: #ffd60a; }
+    color: #ffe876; }
   .main_contacto .main_contacto__section .main_contacto__enviar button {
     width: 200px;
     padding: 10px 5px;
@@ -278,6 +269,9 @@
   /*Ed. 20 Aniversario*/
   .main_index .main_index_sect_ed_20 {
     flex-direction: column-reverse; }
+  .main_index .ed_20_an_img {
+    width: 90%;
+    height: auto; }
   /* Index */
   /* Reglas */
   .reglas__ocultar {
@@ -291,6 +285,9 @@
   .main_index_sect_ed_20 {
     display: flex;
     flex-direction: column-reverse; }
+    .main_index_sect_ed_20 img {
+      width: 55%;
+      height: auto; }
   /* Reglas */
   .reglas__ocultar {
     position: absolute;
