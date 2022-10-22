@@ -26,11 +26,11 @@
   .main_index {
     .main_index_sect_ed_20 {
       flex-direction: column-reverse;
-    }
 
-    .ed_20_an_img {
-      width: 90%;
-      height: auto;
+      img {
+        width: 90%;
+        height: auto;
+      }
     }
   }
 

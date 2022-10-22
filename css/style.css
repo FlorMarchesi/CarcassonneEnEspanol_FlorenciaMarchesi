@@ -269,9 +269,9 @@
   /*Ed. 20 Aniversario*/
   .main_index .main_index_sect_ed_20 {
     flex-direction: column-reverse; }
-  .main_index .ed_20_an_img {
-    width: 90%;
-    height: auto; }
+    .main_index .main_index_sect_ed_20 img {
+      width: 90%;
+      height: auto; }
   /* Index */
   /* Reglas */
   .reglas__ocultar {
